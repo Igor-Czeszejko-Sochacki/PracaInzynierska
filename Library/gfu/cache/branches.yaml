@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-01-07T22:56:21.665+01:00
-  initializedAtString: 2021-01-07T22:56:21.653+01:00
-  localBranches: []
-  remoteBranches: []
+  lastUpdatedAtString: 2021-01-11T02:51:53.303+01:00
+  initializedAtString: 2021-01-11T01:07:20.375+01:00
+  localBranches:
+  - name: master
+    tracking: origin/master
+  remoteBranches:
+  - name: origin/master
+    tracking: '[None]'
   remotes:
   - name: origin
     url: https://github.com/Igor-Czeszejko-Sochacki/PracaInzynierska.git
@@ -26,12 +30,27 @@ MonoBehaviour:
     function: 0
     token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - master
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/Igor-Czeszejko-Sochacki/PracaInzynierska.git
+      trackingBranch: master
   remoteConfigBranches:
-    keys: []
-    subKeys: []
-    subKeyValues: []
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - master
+    subKeyValues:
+    - Values:
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/Igor-Czeszejko-Sochacki/PracaInzynierska.git
+        trackingBranch: 
   configRemotes:
     keys:
     - origin
