@@ -401,7 +401,7 @@ Transform:
   m_Children:
   - {fileID: 1952488540}
   m_Father: {fileID: 1271637010}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &401144916
 MonoBehaviour:
@@ -419,6 +419,8 @@ MonoBehaviour:
   damage: 5
   shootingInterval: 4
   shootingDistance: 60
+  ammoPack: {fileID: 6787036473886514116, guid: 9d8d515534b71714198568141723212b,
+    type: 3}
 --- !u!143 &401144917
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1035,6 +1037,8 @@ MonoBehaviour:
   damage: 5
   shootingInterval: 4
   shootingDistance: 60
+  ammoPack: {fileID: 6787036473886514116, guid: 9d8d515534b71714198568141723212b,
+    type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -194.83989, y: -183.60803, z: 73.113}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1271637010}
@@ -1263,7 +1267,7 @@ Transform:
   m_Children:
   - {fileID: 1601559742}
   m_Father: {fileID: 1271637010}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &966279760
 CharacterController:
@@ -1299,6 +1303,8 @@ MonoBehaviour:
   damage: 5
   shootingInterval: 4
   shootingDistance: 60
+  ammoPack: {fileID: 6787036473886514116, guid: 9d8d515534b71714198568141723212b,
+    type: 3}
 --- !u!1 &991381062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,8 +1640,8 @@ Transform:
   - {fileID: 705507995}
   - {fileID: 1956320816}
   - {fileID: 1487537208}
-  - {fileID: 401144915}
   - {fileID: 966279759}
+  - {fileID: 401144915}
   - {fileID: 1845948277}
   - {fileID: 648362003}
   m_Father: {fileID: 0}
@@ -2122,6 +2128,8 @@ MonoBehaviour:
   damage: 5
   shootingInterval: 4
   shootingDistance: 60
+  ammoPack: {fileID: 6787036473886514116, guid: 9d8d515534b71714198568141723212b,
+    type: 3}
 --- !u!1 &1952488539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,6 +2256,7 @@ MonoBehaviour:
   bulletTransformation: {x: 0, y: 0, z: 0}
   gunSound: {fileID: 1956320819}
   cylinder: {fileID: 2082612004}
+  ammo: {fileID: 0}
   initialAmmunition: 100
   initialHealth: 100
 --- !u!82 &1956320819

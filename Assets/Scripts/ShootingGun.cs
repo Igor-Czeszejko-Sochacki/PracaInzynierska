@@ -11,6 +11,7 @@ public class ShootingGun : MonoBehaviour
     public Vector3 bulletTransformation;
     public AudioSource gunSound;
     public GameObject cylinder;
+    public AmmoPickup ammo;
 
     public int initialAmmunition = 100;
     private int ammunition;
@@ -20,8 +21,6 @@ public class ShootingGun : MonoBehaviour
     public int initialHealth = 100;
     private int health;
     public int Health { get { return health; } }
-
-    private bool isHurt;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +58,18 @@ public class ShootingGun : MonoBehaviour
                 bullet.gameObject.SetActive(false);
                 health -= bullet.enemyBulletDamage;
             }
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Debug.Log(hit.collider.name);
+        if (hit.collider.GetComponent<AmmoPickup>() != null)
+        {
+            
+            AmmoPickup ammoPickup = hit.collider.GetComponent<AmmoPickup>();
+            ammunition += ammoPickup.ammo;
+            Destroy(ammoPickup.gameObject);
         }
     }
 }

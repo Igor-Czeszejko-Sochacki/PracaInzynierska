@@ -12,8 +12,11 @@ public class Enemy : MonoBehaviour
 
     public float shootingDistance = 40f;
     private ShootingGun player;
-    Vector3 proba = new Vector3(0, (1/2), 0);
-    // Start is called before the first frame update
+    public GameObject ammoPack;
+    Vector3 newVector = new Vector3(0, (1/2), 0);
+    Vector3 proba = new Vector3(0.5f,-1.85f, 0);
+
+
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<ShootingGun>();
@@ -21,7 +24,6 @@ public class Enemy : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         shootingTimer -= Time.deltaTime;
@@ -30,7 +32,7 @@ public class Enemy : MonoBehaviour
             shootingTimer = shootingInterval;
             GameObject bullet = ObjectPoolingManger.Instance.SpawnBullet(false);
             bullet.transform.position = transform.position;
-            bullet.transform.forward = ((player.cylinder.transform.position - proba) - transform.position).normalized;
+            bullet.transform.forward = ((player.cylinder.transform.position - newVector) - transform.position).normalized;
             bullet.transform.Rotate(Vector3.right * 90);
         }
     }
@@ -48,6 +50,8 @@ public class Enemy : MonoBehaviour
             {
                 bullet.gameObject.SetActive(false);
                 Destroy(gameObject);
+                GameObject ammoPrefab = Instantiate(ammoPack);
+                ammoPrefab.transform.position = transform.position + proba;
             }
         }
     }

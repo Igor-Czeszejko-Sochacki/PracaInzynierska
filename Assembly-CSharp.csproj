@@ -67,6 +67,7 @@
     <Compile Include="Assets\All assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
     <Compile Include="Assets\All assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
     <Compile Include="Assets\All assets\Yurowm\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
