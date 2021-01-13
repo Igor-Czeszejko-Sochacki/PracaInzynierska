@@ -13,9 +13,791 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-01-12T20:24:57.761+01:00
-  initializedAtString: 2021-01-12T20:24:57.761+01:00
+  lastUpdatedAtString: 2021-01-13T20:01:02.749+01:00
+  initializedAtString: 2021-01-13T20:01:02.749+01:00
   log:
+  - commitID: d3686cbed02364d17c9a97d7ca25654484e4e55a
+    mergeA: 
+    mergeB: 
+    authorName: Igor Czeszejko-Sochacki
+    authorEmail: mortis3@op.pl
+    commitEmail: mortis3@op.pl
+    commitName: Igor Czeszejko-Sochacki
+    summary: Ammo Pickup system
+    description: 
+    timeString: 2021-01-12T22:32:51.000+01:00
+    commitTimeString: 2021-01-12T22:32:51.000+01:00
+    changes:
+    - path: .vs\Praca inzynierska\v16\.suo
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\.vs\Praca
+        inzynierska\v16\.suo
+      projectPath: .vs\Praca inzynierska\v16\.suo
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\All assets\Ammunition pack (demo)\Prefabs\Bullet1(1).prefab
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\All
+        assets\Ammunition pack (demo)\Prefabs\Bullet1(1).prefab
+      projectPath: Assets\All assets\Ammunition pack (demo)\Prefabs\Bullet1(1).prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Prefabs\AmmoPack.prefab
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Prefabs\AmmoPack.prefab
+      projectPath: Assets\Prefabs\AmmoPack.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Prefabs\AmmoPack.prefab.meta
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Prefabs\AmmoPack.prefab.meta
+      projectPath: Assets\Prefabs\AmmoPack.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\AmmoPickup.cs
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Scripts\AmmoPickup.cs
+      projectPath: Assets\Scripts\AmmoPickup.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\AmmoPickup.cs.meta
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Scripts\AmmoPickup.cs.meta
+      projectPath: Assets\Scripts\AmmoPickup.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Enemy.cs
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Scripts\Enemy.cs
+      projectPath: Assets\Scripts\Enemy.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\ShootingGun.cs
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Assets\Scripts\ShootingGun.cs
+      projectPath: Assets\Scripts\ShootingGun.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ArtifactDB
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\Artifacts\01\016f8e5cc970287854d67702a3b2ccc8
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\01\016f8e5cc970287854d67702a3b2ccc8
+      projectPath: Library\Artifacts\01\016f8e5cc970287854d67702a3b2ccc8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\02\0201804d01d80c43ff3c5d658b8dcbd8
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\02\0201804d01d80c43ff3c5d658b8dcbd8
+      projectPath: Library\Artifacts\02\0201804d01d80c43ff3c5d658b8dcbd8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\07\0798d9e9ed38981b645cbb595028f9fd
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\07\0798d9e9ed38981b645cbb595028f9fd
+      projectPath: Library\Artifacts\07\0798d9e9ed38981b645cbb595028f9fd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\0e\0eec3431bd988aa0d2caf033b7d5d7f7
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\0e\0eec3431bd988aa0d2caf033b7d5d7f7
+      projectPath: Library\Artifacts\0e\0eec3431bd988aa0d2caf033b7d5d7f7
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\12\12b60b232256dfca2226d9d52f3f319d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\12\12b60b232256dfca2226d9d52f3f319d
+      projectPath: Library\Artifacts\12\12b60b232256dfca2226d9d52f3f319d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\17\1738d458a93689f10efec4b941dffd42
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\17\1738d458a93689f10efec4b941dffd42
+      projectPath: Library\Artifacts\17\1738d458a93689f10efec4b941dffd42
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\17\174d204b6222260c0f1cfedc71d6bd58
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\17\174d204b6222260c0f1cfedc71d6bd58
+      projectPath: Library\Artifacts\17\174d204b6222260c0f1cfedc71d6bd58
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\17\17d807887b946d4950406fb1e7d6c6f1
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\17\17d807887b946d4950406fb1e7d6c6f1
+      projectPath: Library\Artifacts\17\17d807887b946d4950406fb1e7d6c6f1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\18\183a904754cb91aa63dcba828a2a7fc4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\18\183a904754cb91aa63dcba828a2a7fc4
+      projectPath: Library\Artifacts\18\183a904754cb91aa63dcba828a2a7fc4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\18\183ab95d2ee54ff2e902c57e5744a9d0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\18\183ab95d2ee54ff2e902c57e5744a9d0
+      projectPath: Library\Artifacts\18\183ab95d2ee54ff2e902c57e5744a9d0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\1b\1bad98a7d8bbc10ef3ad3221970a087e
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\1b\1bad98a7d8bbc10ef3ad3221970a087e
+      projectPath: Library\Artifacts\1b\1bad98a7d8bbc10ef3ad3221970a087e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\1c\1c20402b393fcdb027de85219a797e31
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\1c\1c20402b393fcdb027de85219a797e31
+      projectPath: Library\Artifacts\1c\1c20402b393fcdb027de85219a797e31
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\1d\1d6fdf25e5af38eb683b8a0243a95229
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\1d\1d6fdf25e5af38eb683b8a0243a95229
+      projectPath: Library\Artifacts\1d\1d6fdf25e5af38eb683b8a0243a95229
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\1e\1e8c4c793d9b37854275132bfdd41822
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\1e\1e8c4c793d9b37854275132bfdd41822
+      projectPath: Library\Artifacts\1e\1e8c4c793d9b37854275132bfdd41822
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\20\209237bb8c4d0503ebdf6d4572a605c1
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\20\209237bb8c4d0503ebdf6d4572a605c1
+      projectPath: Library\Artifacts\20\209237bb8c4d0503ebdf6d4572a605c1
+      originalPath: Library\Artifacts\83\83ffa1f1bcc15766dbcb8c0b7f5e4b7a
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\22\221609e463e5ca16ce492767c2f837c0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\22\221609e463e5ca16ce492767c2f837c0
+      projectPath: Library\Artifacts\22\221609e463e5ca16ce492767c2f837c0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\22\22de704fec5475429bc073b68dd00a5b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\22\22de704fec5475429bc073b68dd00a5b
+      projectPath: Library\Artifacts\22\22de704fec5475429bc073b68dd00a5b
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\23\230d2e75fe6ef54697dda33701d65c69
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\23\230d2e75fe6ef54697dda33701d65c69
+      projectPath: Library\Artifacts\23\230d2e75fe6ef54697dda33701d65c69
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\28\2894cd2d0abb416ad3b8c7c7ba3fdbd7
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\28\2894cd2d0abb416ad3b8c7c7ba3fdbd7
+      projectPath: Library\Artifacts\28\2894cd2d0abb416ad3b8c7c7ba3fdbd7
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\2d\2dbd2e6c7485d9607efbdcfe392c284f
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\2d\2dbd2e6c7485d9607efbdcfe392c284f
+      projectPath: Library\Artifacts\2d\2dbd2e6c7485d9607efbdcfe392c284f
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\2d\2df047a59f9806eefc88c9c16737b5b4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\2d\2df047a59f9806eefc88c9c16737b5b4
+      projectPath: Library\Artifacts\2d\2df047a59f9806eefc88c9c16737b5b4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\31\3101ccedadb53595df31bb0906f7248f
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\31\3101ccedadb53595df31bb0906f7248f
+      projectPath: Library\Artifacts\31\3101ccedadb53595df31bb0906f7248f
+      originalPath: Library\Artifacts\90\90eff332e1f82b174b79f7a3a340e6a3
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\31\3191967951c92a8fe74ec4bfcce60ed0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\31\3191967951c92a8fe74ec4bfcce60ed0
+      projectPath: Library\Artifacts\31\3191967951c92a8fe74ec4bfcce60ed0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\32\32997f634ae5f716cde560621ef5c308
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\32\32997f634ae5f716cde560621ef5c308
+      projectPath: Library\Artifacts\32\32997f634ae5f716cde560621ef5c308
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\36\36e850deb7f6186c574b87537123ba03
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\36\36e850deb7f6186c574b87537123ba03
+      projectPath: Library\Artifacts\36\36e850deb7f6186c574b87537123ba03
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\36\36eb11d8f92b310579af8a3ae6f67b80
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\36\36eb11d8f92b310579af8a3ae6f67b80
+      projectPath: Library\Artifacts\36\36eb11d8f92b310579af8a3ae6f67b80
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\37\37686a4ec6c576e08fa7363adb51cd5b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\37\37686a4ec6c576e08fa7363adb51cd5b
+      projectPath: Library\Artifacts\37\37686a4ec6c576e08fa7363adb51cd5b
+      originalPath: Library\Artifacts\66\66c0c006375b22d829f8dd8a3ddba195
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\37\37aefcd1bb48276c5514898ba9c505a4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\37\37aefcd1bb48276c5514898ba9c505a4
+      projectPath: Library\Artifacts\37\37aefcd1bb48276c5514898ba9c505a4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\38\38b3b7ef8573290a2c2f26dd2f96f7e5
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\38\38b3b7ef8573290a2c2f26dd2f96f7e5
+      projectPath: Library\Artifacts\38\38b3b7ef8573290a2c2f26dd2f96f7e5
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\40\4072046f380319a00f5def7f01e59b2b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\40\4072046f380319a00f5def7f01e59b2b
+      projectPath: Library\Artifacts\40\4072046f380319a00f5def7f01e59b2b
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\41\41ec743fea1ccd8f7697adae5012dd3c
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\41\41ec743fea1ccd8f7697adae5012dd3c
+      projectPath: Library\Artifacts\41\41ec743fea1ccd8f7697adae5012dd3c
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\42\420d7b5096cab8ff074edd23a80b5523
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\42\420d7b5096cab8ff074edd23a80b5523
+      projectPath: Library\Artifacts\42\420d7b5096cab8ff074edd23a80b5523
+      originalPath: Library\Artifacts\35\3508f1c4030bf42e0ba900b2c408488c
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\46\467e825a9a6b4912f91942b9fcfd2172
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\46\467e825a9a6b4912f91942b9fcfd2172
+      projectPath: Library\Artifacts\46\467e825a9a6b4912f91942b9fcfd2172
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\47\47c15143cd49eb236cceb6240d254a23
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\47\47c15143cd49eb236cceb6240d254a23
+      projectPath: Library\Artifacts\47\47c15143cd49eb236cceb6240d254a23
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\49\49169a0aa0781362622394729b1cfd5d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\49\49169a0aa0781362622394729b1cfd5d
+      projectPath: Library\Artifacts\49\49169a0aa0781362622394729b1cfd5d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\4a\4aa5b728d69a82c6ff26880d59a14c15
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\4a\4aa5b728d69a82c6ff26880d59a14c15
+      projectPath: Library\Artifacts\4a\4aa5b728d69a82c6ff26880d59a14c15
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\4b\4b7d2813ca78aa6ab87d814e8db5e83f
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\4b\4b7d2813ca78aa6ab87d814e8db5e83f
+      projectPath: Library\Artifacts\4b\4b7d2813ca78aa6ab87d814e8db5e83f
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\4c\4c03addb5de7390e3789d98c1b47f80b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\4c\4c03addb5de7390e3789d98c1b47f80b
+      projectPath: Library\Artifacts\4c\4c03addb5de7390e3789d98c1b47f80b
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\4c\4cf7aa05215c95250474a8fa2875139a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\4c\4cf7aa05215c95250474a8fa2875139a
+      projectPath: Library\Artifacts\4c\4cf7aa05215c95250474a8fa2875139a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\56\56e2c69d0d58c1f5f631e5b7e5f2c7fc
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\56\56e2c69d0d58c1f5f631e5b7e5f2c7fc
+      projectPath: Library\Artifacts\56\56e2c69d0d58c1f5f631e5b7e5f2c7fc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\57\574cf61eb0817dfd670718b60758549c
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\57\574cf61eb0817dfd670718b60758549c
+      projectPath: Library\Artifacts\57\574cf61eb0817dfd670718b60758549c
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\57\57c8b840c4ae5feb18cfd5f156216b3b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\57\57c8b840c4ae5feb18cfd5f156216b3b
+      projectPath: Library\Artifacts\57\57c8b840c4ae5feb18cfd5f156216b3b
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\5b\5ba55ed4e867e666afc1f6b3f49db9e6
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\5b\5ba55ed4e867e666afc1f6b3f49db9e6
+      projectPath: Library\Artifacts\5b\5ba55ed4e867e666afc1f6b3f49db9e6
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\5c\5cd5c5cee19d2e9be9c8a9dccada470b
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\5c\5cd5c5cee19d2e9be9c8a9dccada470b
+      projectPath: Library\Artifacts\5c\5cd5c5cee19d2e9be9c8a9dccada470b
+      originalPath: Library\Artifacts\4a\4a64ca4869bfbe482c1d38bf32c78427
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\5d\5de96a64c87acbc28839fd9b60b892ee
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\5d\5de96a64c87acbc28839fd9b60b892ee
+      projectPath: Library\Artifacts\5d\5de96a64c87acbc28839fd9b60b892ee
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\60\6092fbcd8ec44f52bf6578b77c50f776
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\60\6092fbcd8ec44f52bf6578b77c50f776
+      projectPath: Library\Artifacts\60\6092fbcd8ec44f52bf6578b77c50f776
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\63\63f745528ab323ebd562226d31fd76e4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\63\63f745528ab323ebd562226d31fd76e4
+      projectPath: Library\Artifacts\63\63f745528ab323ebd562226d31fd76e4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\65\65a8804c5d39139ebf912c1543b88d7f
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\65\65a8804c5d39139ebf912c1543b88d7f
+      projectPath: Library\Artifacts\65\65a8804c5d39139ebf912c1543b88d7f
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\66\66229e9c2b73bd135c15aa23c5425965
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\66\66229e9c2b73bd135c15aa23c5425965
+      projectPath: Library\Artifacts\66\66229e9c2b73bd135c15aa23c5425965
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\67\6737617555ff7d20afb7eb3b45c5e83e
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\67\6737617555ff7d20afb7eb3b45c5e83e
+      projectPath: Library\Artifacts\67\6737617555ff7d20afb7eb3b45c5e83e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\6a\6a56e768759e4cc92886fd668c6a0a57
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\6a\6a56e768759e4cc92886fd668c6a0a57
+      projectPath: Library\Artifacts\6a\6a56e768759e4cc92886fd668c6a0a57
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\6f\6f7de64db41123bd2d766c4b67367f6d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\6f\6f7de64db41123bd2d766c4b67367f6d
+      projectPath: Library\Artifacts\6f\6f7de64db41123bd2d766c4b67367f6d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\6f\6fa69f3ff3336ebec09b575efa432939
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\6f\6fa69f3ff3336ebec09b575efa432939
+      projectPath: Library\Artifacts\6f\6fa69f3ff3336ebec09b575efa432939
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\70\704999471f703daf1c98dc6b2b58e14c
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\70\704999471f703daf1c98dc6b2b58e14c
+      projectPath: Library\Artifacts\70\704999471f703daf1c98dc6b2b58e14c
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\71\7164b844fdd291ce5b41e79f0f3d10b3
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\71\7164b844fdd291ce5b41e79f0f3d10b3
+      projectPath: Library\Artifacts\71\7164b844fdd291ce5b41e79f0f3d10b3
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\71\7179c7d7d48d0c82ca926e423aa78dd4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\71\7179c7d7d48d0c82ca926e423aa78dd4
+      projectPath: Library\Artifacts\71\7179c7d7d48d0c82ca926e423aa78dd4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\73\73b64ecb25078c6a24b7eabad27f58fb
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\73\73b64ecb25078c6a24b7eabad27f58fb
+      projectPath: Library\Artifacts\73\73b64ecb25078c6a24b7eabad27f58fb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\77\7729e661158b70e753a1110f3117a4b0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\77\7729e661158b70e753a1110f3117a4b0
+      projectPath: Library\Artifacts\77\7729e661158b70e753a1110f3117a4b0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\77\77347068667b8752c58e63444b28be7c
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\77\77347068667b8752c58e63444b28be7c
+      projectPath: Library\Artifacts\77\77347068667b8752c58e63444b28be7c
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\78\782c45ebca3e6b2e12a1e6edfc621fd0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\78\782c45ebca3e6b2e12a1e6edfc621fd0
+      projectPath: Library\Artifacts\78\782c45ebca3e6b2e12a1e6edfc621fd0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\7d\7dc71f2b3a9c9bd8e11c12de5cde3432
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\7d\7dc71f2b3a9c9bd8e11c12de5cde3432
+      projectPath: Library\Artifacts\7d\7dc71f2b3a9c9bd8e11c12de5cde3432
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\80\8078766523990bc8ca6f5c78fef6f4f8
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\80\8078766523990bc8ca6f5c78fef6f4f8
+      projectPath: Library\Artifacts\80\8078766523990bc8ca6f5c78fef6f4f8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\87\87440fa6f2cce5d7eebecabdeed547dd
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\87\87440fa6f2cce5d7eebecabdeed547dd
+      projectPath: Library\Artifacts\87\87440fa6f2cce5d7eebecabdeed547dd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\8c\8c22ab5c046816e133d51293579de427
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\8c\8c22ab5c046816e133d51293579de427
+      projectPath: Library\Artifacts\8c\8c22ab5c046816e133d51293579de427
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\92\92e337fb32214da797468c5f75d59fca
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\92\92e337fb32214da797468c5f75d59fca
+      projectPath: Library\Artifacts\92\92e337fb32214da797468c5f75d59fca
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\a0\a030dc206e55ddf04af5bfa7c686a96d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\a0\a030dc206e55ddf04af5bfa7c686a96d
+      projectPath: Library\Artifacts\a0\a030dc206e55ddf04af5bfa7c686a96d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\a3\a3df314d3bc8258298383257e6eccbfb
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\a3\a3df314d3bc8258298383257e6eccbfb
+      projectPath: Library\Artifacts\a3\a3df314d3bc8258298383257e6eccbfb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\a4\a44dd80bc572febbfb9cf5ebb4c9ab85
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\a4\a44dd80bc572febbfb9cf5ebb4c9ab85
+      projectPath: Library\Artifacts\a4\a44dd80bc572febbfb9cf5ebb4c9ab85
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\a9\a9edf73a110b32d3bf6d7b98a46b7202
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\a9\a9edf73a110b32d3bf6d7b98a46b7202
+      projectPath: Library\Artifacts\a9\a9edf73a110b32d3bf6d7b98a46b7202
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ae\aed50210759acc4d04c58ba5d609e8ab
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ae\aed50210759acc4d04c58ba5d609e8ab
+      projectPath: Library\Artifacts\ae\aed50210759acc4d04c58ba5d609e8ab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\b4\b40b3f85596b8f587e22258f15f32621
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\b4\b40b3f85596b8f587e22258f15f32621
+      projectPath: Library\Artifacts\b4\b40b3f85596b8f587e22258f15f32621
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\b7\b77900bc7ebedcc28ecace74f3a5c453
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\b7\b77900bc7ebedcc28ecace74f3a5c453
+      projectPath: Library\Artifacts\b7\b77900bc7ebedcc28ecace74f3a5c453
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\b7\b796fc19e41d52aa8d0b0effc65449c4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\b7\b796fc19e41d52aa8d0b0effc65449c4
+      projectPath: Library\Artifacts\b7\b796fc19e41d52aa8d0b0effc65449c4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\bc\bc5fd44ca3256380978f714b2af018ae
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\bc\bc5fd44ca3256380978f714b2af018ae
+      projectPath: Library\Artifacts\bc\bc5fd44ca3256380978f714b2af018ae
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c2\c21d462f3e5f664a2764856273979556
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c2\c21d462f3e5f664a2764856273979556
+      projectPath: Library\Artifacts\c2\c21d462f3e5f664a2764856273979556
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c2\c2a6e3a87a1f2871c778f7f81e4c7b4d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c2\c2a6e3a87a1f2871c778f7f81e4c7b4d
+      projectPath: Library\Artifacts\c2\c2a6e3a87a1f2871c778f7f81e4c7b4d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c2\c2cab1e9ed05cb75fa47fbc55059cf43
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c2\c2cab1e9ed05cb75fa47fbc55059cf43
+      projectPath: Library\Artifacts\c2\c2cab1e9ed05cb75fa47fbc55059cf43
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c2\c2d9f3055dd24e1637735deb5b270f91
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c2\c2d9f3055dd24e1637735deb5b270f91
+      projectPath: Library\Artifacts\c2\c2d9f3055dd24e1637735deb5b270f91
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c4\c4c9b22091e8ec607313376880a17781
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c4\c4c9b22091e8ec607313376880a17781
+      projectPath: Library\Artifacts\c4\c4c9b22091e8ec607313376880a17781
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\c9\c9c71006b249ab3bf5c3451f3bbcc3e4
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\c9\c9c71006b249ab3bf5c3451f3bbcc3e4
+      projectPath: Library\Artifacts\c9\c9c71006b249ab3bf5c3451f3bbcc3e4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ca\cad7f46f5f267df3062d7c1e5af5ee21
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ca\cad7f46f5f267df3062d7c1e5af5ee21
+      projectPath: Library\Artifacts\ca\cad7f46f5f267df3062d7c1e5af5ee21
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\cb\cbd9f4540ea242acbb3e0d9ec82ae1a0
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\cb\cbd9f4540ea242acbb3e0d9ec82ae1a0
+      projectPath: Library\Artifacts\cb\cbd9f4540ea242acbb3e0d9ec82ae1a0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\cc\ccfd799297e502f5465d2437c7e328af
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\cc\ccfd799297e502f5465d2437c7e328af
+      projectPath: Library\Artifacts\cc\ccfd799297e502f5465d2437c7e328af
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ce\ce84d49154243c2582223b256e24f283
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ce\ce84d49154243c2582223b256e24f283
+      projectPath: Library\Artifacts\ce\ce84d49154243c2582223b256e24f283
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\d7\d7ae23062b428a1bfb7f57e591b3ac71
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\d7\d7ae23062b428a1bfb7f57e591b3ac71
+      projectPath: Library\Artifacts\d7\d7ae23062b428a1bfb7f57e591b3ac71
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\d8\d85df6e7d464200cb85be9e19c6c2a0c
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\d8\d85df6e7d464200cb85be9e19c6c2a0c
+      projectPath: Library\Artifacts\d8\d85df6e7d464200cb85be9e19c6c2a0c
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\d9\d90f2ab369e8bb865e69776782852953
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\d9\d90f2ab369e8bb865e69776782852953
+      projectPath: Library\Artifacts\d9\d90f2ab369e8bb865e69776782852953
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\e1\e142f78a8589e54e217e44d5a0927e3e
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\e1\e142f78a8589e54e217e44d5a0927e3e
+      projectPath: Library\Artifacts\e1\e142f78a8589e54e217e44d5a0927e3e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\e3\e336392f6410f7c6d6fb89068995ab67
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\e3\e336392f6410f7c6d6fb89068995ab67
+      projectPath: Library\Artifacts\e3\e336392f6410f7c6d6fb89068995ab67
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\e7\e7a8c35ee80057a411dc3bcb772d6832
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\e7\e7a8c35ee80057a411dc3bcb772d6832
+      projectPath: Library\Artifacts\e7\e7a8c35ee80057a411dc3bcb772d6832
+      originalPath: Library\Artifacts\0e\0ecc986b6e5febf2240f427ffa528e5e
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\e8\e82b0561e70ddc162335a64e568729a5
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\e8\e82b0561e70ddc162335a64e568729a5
+      projectPath: Library\Artifacts\e8\e82b0561e70ddc162335a64e568729a5
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\e9\e9099887117e10b569ea50083e091f6a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\e9\e9099887117e10b569ea50083e091f6a
+      projectPath: Library\Artifacts\e9\e9099887117e10b569ea50083e091f6a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ea\ea5b68bce26d49ce7a92fa94a07f7e5a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ea\ea5b68bce26d49ce7a92fa94a07f7e5a
+      projectPath: Library\Artifacts\ea\ea5b68bce26d49ce7a92fa94a07f7e5a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\eb\ebadc62f1fd6a4a28f8b328313d9749a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\eb\ebadc62f1fd6a4a28f8b328313d9749a
+      projectPath: Library\Artifacts\eb\ebadc62f1fd6a4a28f8b328313d9749a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ee\ee8174e6b0dde3984d28c6cbeb62cea8
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ee\ee8174e6b0dde3984d28c6cbeb62cea8
+      projectPath: Library\Artifacts\ee\ee8174e6b0dde3984d28c6cbeb62cea8
+      originalPath: Library\Artifacts\00\00f169f2382ac22c649e4d8056d6859a
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Library\Artifacts\f1\f1f07da283fb17fc82b5ec38b0752cf8
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\f1\f1f07da283fb17fc82b5ec38b0752cf8
+      projectPath: Library\Artifacts\f1\f1f07da283fb17fc82b5ec38b0752cf8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\f3\f344f7953d10cb9a6b548becf0cd314a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\f3\f344f7953d10cb9a6b548becf0cd314a
+      projectPath: Library\Artifacts\f3\f344f7953d10cb9a6b548becf0cd314a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\f9\f9aa4e19be680d818c3c4f8539b8319a
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\f9\f9aa4e19be680d818c3c4f8539b8319a
+      projectPath: Library\Artifacts\f9\f9aa4e19be680d818c3c4f8539b8319a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\fa\faee02254ba97047d6e4cbd1eaeccadc
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\fa\faee02254ba97047d6e4cbd1eaeccadc
+      projectPath: Library\Artifacts\fa\faee02254ba97047d6e4cbd1eaeccadc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\fb\fb6f61937116c96853b77a62b8fbf9ae
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\fb\fb6f61937116c96853b77a62b8fbf9ae
+      projectPath: Library\Artifacts\fb\fb6f61937116c96853b77a62b8fbf9ae
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\Artifacts\ff\ff9d7b2973bdd0f817c49ad7801bf05d
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\Artifacts\ff\ff9d7b2973bdd0f817c49ad7801bf05d
+      projectPath: Library\Artifacts\ff\ff9d7b2973bdd0f817c49ad7801bf05d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\SourceAssetDB
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\c64184-9d8d515534b7171419.json
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\StateCache\Hierarchy\c64184-9d8d515534b7171419.json
+      projectPath: Library\StateCache\Hierarchy\c64184-9d8d515534b7171419.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\a08c92-9d8d515534b7171419.json
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\StateCache\SceneView\a08c92-9d8d515534b7171419.json
+      projectPath: Library\StateCache\SceneView\a08c92-9d8d515534b7171419.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\a08c92-mainStage.json
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\StateCache\SceneView\a08c92-mainStage.json
+      projectPath: Library\StateCache\SceneView\a08c92-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\expandedItems
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\expandedItems
+      projectPath: Library\expandedItems
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\morti\Desktop\Praca inzynierska\Praca inzynierska\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 48efaa0022063ff48aedf8686a8dfe4c5a1534d1
     mergeA: 
     mergeB: 

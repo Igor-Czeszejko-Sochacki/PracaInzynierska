@@ -9,6 +9,7 @@ public class ObjectPoolingManger : MonoBehaviour
     public static ObjectPoolingManger Instance { get { return instance; } }
 
     public GameObject bulletPrefab;
+
     public int bulletAmount = 30;
     private List<GameObject> bulletsList;
     // Start is called before the first frame update
@@ -24,9 +25,10 @@ public class ObjectPoolingManger : MonoBehaviour
             prefabInstance.SetActive(false);
             bulletsList.Add(prefabInstance);
         }
+
     }
 
-   public GameObject SpawnBullet(bool shotByPlayer)
+   public GameObject SpawnBullet(bool shotByPlayer, int damage)
     {
         foreach (GameObject bullet in bulletsList)
         {
@@ -34,12 +36,15 @@ public class ObjectPoolingManger : MonoBehaviour
             {
                 bullet.SetActive(true);
                 bullet.GetComponent<BulletLogic>().ShotByPlayer = shotByPlayer;
+                bullet.GetComponent<BulletLogic>().playerBulletDamage = damage;
                 return bullet;
             }
+            
         }
         GameObject prefabInstance = Instantiate(bulletPrefab);
         prefabInstance.transform.SetParent(transform);
         bulletPrefab.GetComponent<BulletLogic>().ShotByPlayer = shotByPlayer;
+        bulletPrefab.GetComponent<BulletLogic>().playerBulletDamage = damage;
         bulletsList.Add(prefabInstance);
         return prefabInstance;
     }
