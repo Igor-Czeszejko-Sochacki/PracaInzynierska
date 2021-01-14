@@ -28,7 +28,7 @@ public class ObjectPoolingManger : MonoBehaviour
 
     }
 
-   public GameObject SpawnBullet(bool shotByPlayer, int damage)
+    public GameObject SpawnBullet(bool shotByPlayer, int damage)
     {
         foreach (GameObject bullet in bulletsList)
         {

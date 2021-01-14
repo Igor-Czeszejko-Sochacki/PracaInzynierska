@@ -10,8 +10,11 @@ public class Enemy : MonoBehaviour
     //Enemy stats
     public int health = 100;
     public int damage = 5;
+    public float bulletLifeTime = 20f;
     public float shootingDistance = 40f;
-    private bool isDead = false;
+    //private bool isDead = false;
+
+
     //Timer to wait for another shot
     public float shootingInterval = 4f;
     private float shootingTimer;
@@ -41,25 +44,24 @@ public class Enemy : MonoBehaviour
     }
 
     //Getting hit
-    void OnTriggerEnter(Collider characterCollider)
-    {
-        if (characterCollider.GetComponent<BulletLogic>() != null)
-        {
-            BulletLogic bullet = characterCollider.GetComponent<BulletLogic>();
-            if (bullet.ShotByPlayer == true)
-            {
-                bullet.gameObject.SetActive(false);
-                health -= bullet.playerBulletDamage;
-            }
-            if (health <= 0 && isDead == false)
-            {
-                bullet.gameObject.SetActive(false);
-                isDead = true;
-                Destroy(gameObject);
-                GameObject ammoPrefab = Instantiate(ammoPack);
-                ammoPrefab.transform.position = transform.position + newVector2;
-                
-            }
-        }
-    }
+    //void OnTriggerEnter(Collider characterCollider)
+    //{
+    //    if (characterCollider.GetComponent<BulletLogic>() != null)
+    //    {
+    //        BulletLogic bullet = characterCollider.GetComponent<BulletLogic>();
+    //        if (bullet.ShotByPlayer == true)
+    //        {
+    //            bullet.gameObject.SetActive(false);
+    //            health -= bullet.playerBulletDamage;
+    //        }
+    //        if (health <= 0 && isDead == false)
+    //        {
+    //            bullet.gameObject.SetActive(false);
+    //            isDead = true;
+    //            Destroy(gameObject);
+    //            GameObject ammoPrefab = Instantiate(ammoPack);
+    //            ammoPrefab.transform.position = transform.position + newVector2;      
+    //        }
+    //    }
+    //}
 }

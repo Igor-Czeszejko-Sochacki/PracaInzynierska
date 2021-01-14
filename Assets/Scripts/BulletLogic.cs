@@ -5,8 +5,10 @@ using UnityEngine;
 public class BulletLogic : MonoBehaviour
 {
 
-    public float bulletSpeed = 5f;
+    public float bulletSpeed = 50f;
     public float bulletLifeTime = 20f;
+    public LayerMask objectMask;
+
     public int enemyBulletDamage;
     public int playerBulletDamage;
 
@@ -32,6 +34,14 @@ public class BulletLogic : MonoBehaviour
 
         //If enough time passed - disable bullet
         if (currentBulletLifeTimer <= 0f)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    void OnTriggerEnter(Collider characterCollider)
+    {
+        if (characterCollider.gameObject.layer == objectMask)
         {
             gameObject.SetActive(false);
         }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-01-13T21:01:35.952+01:00
-  initializedAtString: 2021-01-13T20:00:58.779+01:00
+  lastUpdatedAtString: 2021-01-15T00:36:40.136+01:00
+  initializedAtString: 2021-01-15T00:16:50.879+01:00
   currentGitRemote:
     name: origin
     url: https://github.com/Igor-Czeszejko-Sochacki/PracaInzynierska.git

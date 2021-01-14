@@ -17,7 +17,6 @@ public class ShotgunHandling : MonoBehaviour
     private float waitTime = 1f;
 
     //Gun damage and bullets spread
-    public float bulletLife = 5f;
     public int damage = 10;
     private int numerOfBullets = 8;
     private float bulletspreadX;

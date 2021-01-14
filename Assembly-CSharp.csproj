@@ -63,10 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\All assets\Soldier\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\All assets\Soldier\Demo\Scripts\CharacterPanel.cs" />
-    <Compile Include="Assets\All assets\Soldier\Demo\Scripts\CharacterViewer.cs" />
-    <Compile Include="Assets\All assets\Soldier\Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -76,10 +72,10 @@
     <Compile Include="Assets\Scripts\PistolHandling.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\RifleHandling.cs" />
+    <Compile Include="Assets\Scripts\ShooterEnemy.cs" />
     <Compile Include="Assets\Scripts\ShotgunHandling.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
-    <None Include="Assets\All assets\Soldier\Shaders\SkinShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -645,7 +641,16 @@
       <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{331118C4-653C-3809-636B-4F943A2C85AB}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{4470BC03-726B-07A2-208A-1E9CBF35341F}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

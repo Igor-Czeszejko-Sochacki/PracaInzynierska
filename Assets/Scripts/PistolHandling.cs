@@ -19,6 +19,7 @@ public class PistolHandling : MonoBehaviour
 
     //Gun damage
     public int damage = 80;
+    public float bulletLifeTime = 20f;
 
     //Recoil
     private float recoilX;
