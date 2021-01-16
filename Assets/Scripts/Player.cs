@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public int healthRegeneration = 5;
     public int initialHealth = 100;
     private float health;
-    public float Health { get { return health; } }
+    public float Health { get { return health; } set { health = value; } }
 
 
     void Start()
