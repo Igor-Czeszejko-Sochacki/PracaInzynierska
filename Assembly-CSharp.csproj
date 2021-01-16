@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\RifleHandling.cs" />
     <Compile Include="Assets\Scripts\ShooterEnemy.cs" />
     <Compile Include="Assets\Scripts\ShotgunHandling.cs" />
+    <Compile Include="Assets\Scripts\Skills.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <None Include="Assets\All assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />

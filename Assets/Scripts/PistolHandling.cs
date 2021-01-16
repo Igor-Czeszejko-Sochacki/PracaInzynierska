@@ -11,6 +11,7 @@ public class PistolHandling : MonoBehaviour
     public Vector3 bulletTransformation;
     public AudioSource gunSound;
     public ParticleSystem muzzleFlash;
+    public RifleHandling rifle;
 
     //Ammunition
     public int initialPistolAmmunition = 90;
@@ -25,6 +26,22 @@ public class PistolHandling : MonoBehaviour
     private float recoilX;
     private float recoilY;
 
+    //Skills
+    private bool isSkillRechargeActive;
+    public bool IsSkillRechargeActive { get { return isSkillRechargeActive; } set { isSkillRechargeActive = value; } }
+
+    private float skillTimer = 0;
+    public float SkillTimer { get { return skillTimer; } }
+
+
+    private float skillRechargeTimer = 5;
+    public float SkillRechargeTimer { get { return skillRechargeTimer; } set { skillRechargeTimer = value; } }
+
+
+    private bool isSkillActive = false;
+    public bool IsSkillActive { get { return isSkillActive; } set { isSkillActive = value; } }
+
+
     void Start()
     {
         bulletTransformation = new Vector3(1, 0, 0);
@@ -35,6 +52,37 @@ public class PistolHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (rifle.IsSkillRechargeActive == true)
+        {
+            rifle.SkillRechargeTimer += Time.deltaTime;
+            if (rifle.SkillRechargeTimer >= 5)
+            {
+                rifle.IsSkillRechargeActive = false;
+            }
+        }
+        
+        //Turning on the skill
+        if (Input.GetKeyDown(KeyCode.Q) && isSkillActive == false && skillRechargeTimer >= 5)
+        {
+            isSkillActive = true;
+            skillRechargeTimer = 0;
+        }
+
+        //Recharging the skill
+        if (isSkillRechargeActive == true)
+        {
+            skillRechargeTimer += Time.deltaTime;
+            if (skillRechargeTimer >= 5)
+            {
+                isSkillRechargeActive = false;
+            }
+        }
+
+        if (IsSkillActive == true)
+        {
+            damage = 300;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             if (pistolAmmunition > 0)
@@ -57,6 +105,10 @@ public class PistolHandling : MonoBehaviour
                 recoilY = Random.Range(3, 6);
                 mouseMovement.MouseRecoilX = recoilX;
                 mouseMovement.MouseRecoilY = recoilY;
+
+                isSkillActive = false;
+                isSkillRechargeActive = true;
+                damage = 80;
             }
         }
     }

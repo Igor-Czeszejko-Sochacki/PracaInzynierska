@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     public WeaponManager currentWeapon;
     public Text ammunitionText;
     public Text heathText;
+    public Image skillShowcase;
+
     void Update()
     {
         heathText.text = "Health: " + (int)player.Health;
@@ -23,5 +25,36 @@ public class GameController : MonoBehaviour
             ammunitionText.text = "Ammo: " + shotgun.ShotgunAmmunition;
         else if (currentWeapon.CurrentWeapon == 2)
             ammunitionText.text = "Ammo: " + pistol.PistolAmmunition;
+
+
+        if (rifle.IsSkillActive == false && currentWeapon.CurrentWeapon == 0 && rifle.IsSkillRechargeActive == false)
+        {
+            skillShowcase.fillAmount = 1;
+        }
+
+        if (rifle.IsSkillActive == true && currentWeapon.CurrentWeapon == 0)
+        {
+            skillShowcase.fillAmount = rifle.SkillTimer / 5;
+        }
+
+        if (rifle.IsSkillRechargeActive == true && currentWeapon.CurrentWeapon == 0)
+        {
+            skillShowcase.fillAmount = rifle.SkillRechargeTimer / 5;
+        }
+
+        if (pistol.IsSkillActive == false && currentWeapon.CurrentWeapon == 2 && pistol.IsSkillRechargeActive == false)
+        {
+            skillShowcase.fillAmount = 1;
+        }
+
+        if (pistol.IsSkillActive == true && currentWeapon.CurrentWeapon == 2)
+        {
+            skillShowcase.fillAmount = pistol.SkillTimer / 5;
+        }
+
+        if (pistol.IsSkillRechargeActive == true && currentWeapon.CurrentWeapon == 2)
+        {
+            skillShowcase.fillAmount = pistol.SkillRechargeTimer / 5;
+        }
     }
 }

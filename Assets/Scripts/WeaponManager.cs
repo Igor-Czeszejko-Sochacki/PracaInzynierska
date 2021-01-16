@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    public RifleHandling rifle;
+    public PistolHandling pistol;
+   // public ShotgunHandling shotgun;
+
     [SerializeField]
-    private GameObject[] allWeapons;
+    private GameObject[] allWeapons = null;
     private int currentWeapon;
     public int CurrentWeapon { get { return currentWeapon; } }
 
@@ -21,7 +25,7 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKeyDown(KeyCode.Alpha1) && pistol.IsSkillActive == false)
         {
             allWeapons[currentWeapon].gameObject.SetActive(false);
             currentWeapon = 0;
@@ -35,7 +39,7 @@ public class WeaponManager : MonoBehaviour
             allWeapons[currentWeapon].gameObject.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && rifle.IsSkillActive == false)
         {
             allWeapons[currentWeapon].gameObject.SetActive(false);
             currentWeapon = 2;

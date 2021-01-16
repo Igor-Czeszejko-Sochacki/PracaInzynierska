@@ -24,7 +24,7 @@ public class ShooterEnemy : MonoBehaviour
 
     //Vectors for bullet transformation
     Vector3 newVector = new Vector3(0, (1 / 2), 0);
-    Vector3 newVector2 = new Vector3(0.5f, -1.85f, 0);
+    Vector3 ammoPackVector = new Vector3(0.5f, -1.85f, 0);
 
     //States
     public bool playerIsInRange = false;
@@ -165,7 +165,7 @@ public class ShooterEnemy : MonoBehaviour
                 isDead = true;
                 Destroy(gameObject);
                 GameObject ammoPrefab = Instantiate(ammoPack);
-                ammoPrefab.transform.position = transform.position + newVector2;
+                ammoPrefab.transform.position = transform.position + ammoPackVector;
             }
         }
     }

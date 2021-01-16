@@ -31,7 +31,7 @@ public class BomberEnemy : MonoBehaviour
     public float walkPointRange = 20;
 
     //Vector for ammunition pickup
-    Vector3 newVector2 = new Vector3(0.5f, -1.85f, 0);
+    Vector3 ammoPackVector = new Vector3(0.5f, -1.85f, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -128,7 +128,7 @@ public class BomberEnemy : MonoBehaviour
             isDead = true;
             Destroy(gameObject,0.3f);
             GameObject ammoPrefab = Instantiate(ammoPack);
-            ammoPrefab.transform.position = transform.position + newVector2;
+            ammoPrefab.transform.position = transform.position + ammoPackVector;
             //+ newVector2
         }
     }
@@ -169,7 +169,7 @@ public class BomberEnemy : MonoBehaviour
                 isDead = true;
                 Destroy(gameObject);
                 GameObject ammoPrefab = Instantiate(ammoPack);
-                ammoPrefab.transform.position = transform.position + newVector2;
+                ammoPrefab.transform.position = transform.position + ammoPackVector;
             }
         }
     }
