@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
         else if (currentWeapon.CurrentWeapon == 2)
             ammunitionText.text = "Ammo: " + pistol.PistolAmmunition;
 
-
+        //Displaying rifle skill bar
         if (rifle.IsSkillActive == false && currentWeapon.CurrentWeapon == 0 && rifle.IsSkillRechargeActive == false)
         {
             skillShowcase.fillAmount = 1;
@@ -42,6 +42,23 @@ public class GameController : MonoBehaviour
             skillShowcase.fillAmount = rifle.SkillRechargeTimer / 5;
         }
 
+        //Displaying shotgun skill bar
+        if (shotgun.IsSkillActive == false && currentWeapon.CurrentWeapon == 1 && shotgun.IsSkillRechargeActive == false)
+        {
+            skillShowcase.fillAmount = 1;
+        }
+
+        if (shotgun.IsSkillActive == true && currentWeapon.CurrentWeapon == 1)
+        {
+            skillShowcase.fillAmount = shotgun.SkillTimer / 5;
+        }
+
+        if (shotgun.IsSkillRechargeActive == true && currentWeapon.CurrentWeapon == 1)
+        {
+            skillShowcase.fillAmount = shotgun.SkillRechargeTimer / 5;
+        }
+
+        //Displaying pistol skill bar
         if (pistol.IsSkillActive == false && currentWeapon.CurrentWeapon == 2 && pistol.IsSkillRechargeActive == false)
         {
             skillShowcase.fillAmount = 1;

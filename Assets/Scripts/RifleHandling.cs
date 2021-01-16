@@ -12,6 +12,7 @@ public class RifleHandling : MonoBehaviour
     public AudioSource gunSound;
     public ParticleSystem muzzleFlash;
     public PistolHandling pistol;
+    public ShotgunHandling shotgun;
 
     //Waiting for another shot
     private float totalWaitTime = 0;
@@ -58,12 +59,22 @@ public class RifleHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Recharging other guns
         if (pistol.IsSkillRechargeActive == true)
         {
             pistol.SkillRechargeTimer += Time.deltaTime;
             if (pistol.SkillRechargeTimer >= 5)
             {
                 pistol.IsSkillRechargeActive = false;
+            }
+        }
+
+        if (shotgun.IsSkillRechargeActive == true)
+        {
+            shotgun.SkillRechargeTimer += Time.deltaTime;
+            if (shotgun.SkillRechargeTimer >= 5)
+            {
+                shotgun.IsSkillRechargeActive = false;
             }
         }
 
@@ -95,6 +106,7 @@ public class RifleHandling : MonoBehaviour
             }
         }
 
+        //Shooting
         if (Input.GetMouseButton(0))
         {
             totalWaitTime += Time.deltaTime;

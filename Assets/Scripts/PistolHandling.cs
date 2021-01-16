@@ -12,6 +12,7 @@ public class PistolHandling : MonoBehaviour
     public AudioSource gunSound;
     public ParticleSystem muzzleFlash;
     public RifleHandling rifle;
+    public ShotgunHandling shotgun;
 
     //Ammunition
     public int initialPistolAmmunition = 90;
@@ -26,20 +27,20 @@ public class PistolHandling : MonoBehaviour
     private float recoilX;
     private float recoilY;
 
-    //Skills
+    //Skill recharge
     private bool isSkillRechargeActive;
     public bool IsSkillRechargeActive { get { return isSkillRechargeActive; } set { isSkillRechargeActive = value; } }
-
-    private float skillTimer = 0;
-    public float SkillTimer { get { return skillTimer; } }
-
 
     private float skillRechargeTimer = 5;
     public float SkillRechargeTimer { get { return skillRechargeTimer; } set { skillRechargeTimer = value; } }
 
 
+    //Skill activation and timer
     private bool isSkillActive = false;
     public bool IsSkillActive { get { return isSkillActive; } set { isSkillActive = value; } }
+
+    private float skillTimer = 0;
+    public float SkillTimer { get { return skillTimer; } }
 
 
     void Start()
@@ -52,6 +53,7 @@ public class PistolHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Recharge of other guns
         if (rifle.IsSkillRechargeActive == true)
         {
             rifle.SkillRechargeTimer += Time.deltaTime;
@@ -60,7 +62,15 @@ public class PistolHandling : MonoBehaviour
                 rifle.IsSkillRechargeActive = false;
             }
         }
-        
+        if (shotgun.IsSkillRechargeActive == true)
+        {
+            shotgun.SkillRechargeTimer += Time.deltaTime;
+            if (shotgun.SkillRechargeTimer >= 5)
+            {
+                shotgun.IsSkillRechargeActive = false;
+            }
+        }
+
         //Turning on the skill
         if (Input.GetKeyDown(KeyCode.Q) && isSkillActive == false && skillRechargeTimer >= 5)
         {
@@ -77,7 +87,7 @@ public class PistolHandling : MonoBehaviour
                 isSkillRechargeActive = false;
             }
         }
-
+        //Skill effect
         if (IsSkillActive == true)
         {
             damage = 300;
@@ -106,9 +116,13 @@ public class PistolHandling : MonoBehaviour
                 mouseMovement.MouseRecoilX = recoilX;
                 mouseMovement.MouseRecoilY = recoilY;
 
-                isSkillActive = false;
-                isSkillRechargeActive = true;
-                damage = 80;
+                //Checking if skill was active - if yes then turn it off and disable its effect and start recharge
+                if (isSkillActive == true)
+                {
+                    isSkillActive = false;
+                    isSkillRechargeActive = true;
+                    damage = 80;
+                }
             }
         }
     }

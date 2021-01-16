@@ -11,6 +11,9 @@ public class ShotgunHandling : MonoBehaviour
     public Vector3 bulletTransformation;
     public AudioSource gunSound;
     public ParticleSystem muzzleFlash;
+    public RifleHandling rifle;
+    public PistolHandling pistol;
+    public TimeSlowSkill timeSlowSkill;
 
     //Waiting for another shot
     private float totalWaitTime = 0;
@@ -32,7 +35,22 @@ public class ShotgunHandling : MonoBehaviour
     public int initialShotgunAmmunition = 30;
     private int shotgunAmmunition;
     public int ShotgunAmmunition { get { return shotgunAmmunition; } set { shotgunAmmunition = value; } }
-    
+
+    //Skill
+    private bool isSkillRechargeActive;
+    public bool IsSkillRechargeActive { get { return isSkillRechargeActive; } set { isSkillRechargeActive = value; } }
+
+    private float skillTimer = 5;
+    public float SkillTimer { get { return skillTimer; } }
+
+
+    private float skillRechargeTimer = 5;
+    public float SkillRechargeTimer { get { return skillRechargeTimer; } set { skillRechargeTimer = value; } }
+
+
+    private bool isSkillActive = false;
+    public bool IsSkillActive { get { return isSkillActive; } set { isSkillActive = value; } }
+
     void Start()
     {
         bulletTransformation = new Vector3(1, 0, 0);
@@ -44,8 +62,60 @@ public class ShotgunHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Recharging other guns
+        if (pistol.IsSkillRechargeActive == true)
+        {
+            pistol.SkillRechargeTimer += Time.unscaledDeltaTime;
+            if (pistol.SkillRechargeTimer >= 5)
+            {
+                pistol.IsSkillRechargeActive = false;
+            }
+        }
+
+        if (rifle.IsSkillRechargeActive == true)
+        {
+            rifle.SkillRechargeTimer += Time.unscaledDeltaTime;
+            if (rifle.SkillRechargeTimer >= 5)
+            {
+                rifle.IsSkillRechargeActive = false;
+            }
+        }
+
+        //Turning on the skill
+        if (Input.GetKeyDown(KeyCode.Q) && isSkillActive == false && skillRechargeTimer >= 5)
+        {
+            isSkillActive = true;
+            skillRechargeTimer = 0;
+            timeSlowSkill.slowDownTime();
+        }
+
+        //Truning off the skill
+        if (isSkillActive == true)
+        {
+            skillTimer -= Time.unscaledDeltaTime;
+            if (skillTimer <= 0)
+            {
+                timeSlowSkill.stopSlowMotion();
+                isSkillRechargeActive = true;
+                isSkillActive = false;
+                skillTimer = 5;
+            }
+        }
+
+        // Recharging the skill
+        if (isSkillRechargeActive == true)
+        {
+            skillRechargeTimer += Time.unscaledDeltaTime;
+            if (skillRechargeTimer >= 5)
+            {
+                isSkillRechargeActive = false;
+            }
+        }
+
+
+
         //Shooting the gun
-        totalWaitTime += Time.deltaTime;
+        totalWaitTime += Time.unscaledDeltaTime;
         if (Input.GetMouseButtonDown(0))
         {
             if (shotgunAmmunition > 0 && totalWaitTime >= waitTime)

@@ -36,7 +36,10 @@ public class ObjectPoolingManger : MonoBehaviour
             {
                 bullet.SetActive(true);
                 bullet.GetComponent<BulletLogic>().ShotByPlayer = shotByPlayer;
-                bullet.GetComponent<BulletLogic>().playerBulletDamage = damage;
+                if (shotByPlayer == true)
+                    bullet.GetComponent<BulletLogic>().playerBulletDamage = damage;
+                else
+                    bullet.GetComponent<BulletLogic>().enemyBulletDamage = damage;
                 return bullet;
             }
             
@@ -44,7 +47,10 @@ public class ObjectPoolingManger : MonoBehaviour
         GameObject prefabInstance = Instantiate(bulletPrefab);
         prefabInstance.transform.SetParent(transform);
         bulletPrefab.GetComponent<BulletLogic>().ShotByPlayer = shotByPlayer;
-        bulletPrefab.GetComponent<BulletLogic>().playerBulletDamage = damage;
+        if (shotByPlayer == true)
+            bulletPrefab.GetComponent<BulletLogic>().playerBulletDamage = damage;
+        else
+            bulletPrefab.GetComponent<BulletLogic>().enemyBulletDamage = damage;
         bulletsList.Add(prefabInstance);
         return prefabInstance;
     }

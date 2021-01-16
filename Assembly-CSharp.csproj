@@ -73,7 +73,6 @@
     <Compile Include="Assets\Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\Scripts\BomberEnemy.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\MouseMovement.cs" />
     <Compile Include="Assets\Scripts\ObjectPoolingManger.cs" />
@@ -82,7 +81,8 @@
     <Compile Include="Assets\Scripts\RifleHandling.cs" />
     <Compile Include="Assets\Scripts\ShooterEnemy.cs" />
     <Compile Include="Assets\Scripts\ShotgunHandling.cs" />
-    <Compile Include="Assets\Scripts\Skills.cs" />
+    <Compile Include="Assets\Scripts\SniperEnemy.cs" />
+    <Compile Include="Assets\Scripts\TimeSlowSkill.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <None Include="Assets\All assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />

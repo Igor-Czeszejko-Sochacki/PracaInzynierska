@@ -6,6 +6,7 @@ public class WeaponManager : MonoBehaviour
 {
     public RifleHandling rifle;
     public PistolHandling pistol;
+    public ShotgunHandling shotgun;
    // public ShotgunHandling shotgun;
 
     [SerializeField]
@@ -25,21 +26,21 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1) && pistol.IsSkillActive == false)
+        if(Input.GetKeyDown(KeyCode.Alpha1) && pistol.IsSkillActive == false && shotgun.IsSkillActive == false)
         {
             allWeapons[currentWeapon].gameObject.SetActive(false);
             currentWeapon = 0;
             allWeapons[currentWeapon].gameObject.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && rifle.IsSkillActive == false && pistol.IsSkillActive == false)
         {
             allWeapons[currentWeapon].gameObject.SetActive(false);
             currentWeapon = 1;
             allWeapons[currentWeapon].gameObject.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3) && rifle.IsSkillActive == false)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && rifle.IsSkillActive == false && shotgun.IsSkillActive == false)
         {
             allWeapons[currentWeapon].gameObject.SetActive(false);
             currentWeapon = 2;
