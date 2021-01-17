@@ -1,65 +1,83 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class SniperEnemy : MonoBehaviour
+public class SmallEnemy : MonoBehaviour
 {
     public Transform player;
     public Player playerModel;
+    private NavMeshAgent agent;
 
     //Enemy stats
-    public int health = 300;
-    public int damage = 30;
-    private bool isDead = false;
-    public float attackRange;
-
-    //Timer to wait for another shot
-    public float shootingInterval = 5f;
-    private float shootingTimer;
-
-    //Vectors for bullet transformation
-    Vector3 newVector = new Vector3(0, (1 / 2), 0);
+    public int health = 100;
+    public int damage = 5;
+    public float sightRange;
+    public float attackRange = 3;
+    public float attackInterval = 0.5f;
 
     //States
+    public bool playerIsInRange = false;
     public bool playerInAttackRange = false;
+    public bool attacked = false;
+    private bool isDead = false;
 
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
         playerModel = GameObject.Find("Player").GetComponent<Player>();
         player = GameObject.Find("Player").transform;
-        shootingTimer = shootingInterval;
-        attackRange = Random.Range(20, 40);
+        sightRange = Random.Range(90, 100);
+        agent = GetComponent<NavMeshAgent>();
     }
 
+    // Update is called once per frame
     void Update()
     {
+        attackInterval -= Time.unscaledDeltaTime;
+        if (attackInterval <= 0 && attacked == true)
+            attacked = false;
         //Checking player position and doing action according to the distance
+        if (Vector3.Distance(player.position, transform.position) <= sightRange)
+            playerIsInRange = true;
+        else
+            playerIsInRange = false;
+
         if (Vector3.Distance(player.position, transform.position) <= attackRange)
             playerInAttackRange = true;
         else
             playerInAttackRange = false;
 
-        if (playerInAttackRange == true)
+        if (playerIsInRange == true && playerInAttackRange == false)
         {
-            Attacking();
+            Chasing();
+        }
+        if (playerIsInRange == true && playerInAttackRange == true)
+        {
+            Attack();
         }
     }
 
-
-    private void Attacking()
+    //Chasing the player
+    private void Chasing()
     {
-        //Rotating the enemy in the direction of the player
-        transform.LookAt(player);
+        //Enemy is chasing the player
+        agent.SetDestination(player.position);
+    }
 
-        //Shooting
-        shootingTimer -= Time.deltaTime;
-        if (shootingTimer <= 0 && Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+    //Attacking the player
+    private void Attack()
+    {
+        //Stopping the enemy
+        agent.SetDestination(transform.position);
+
+        //Attacking the player
+        if (attacked == false)
         {
-            shootingTimer = shootingInterval;
-            GameObject bullet = ObjectPoolingManger.Instance.SpawnBullet(false, damage);
-            bullet.transform.position = transform.position + transform.forward * 2;
-            bullet.transform.forward = ((playerModel.cylinder.transform.position - newVector) - transform.position).normalized;
-            bullet.transform.Rotate(Vector3.right * 90);
+            playerModel.Health -= damage;
+            playerModel.timeFromAttack = 0;
+            attacked = true;
+            attackInterval = 0.5f;
         }
     }
 
@@ -70,6 +88,10 @@ public class SniperEnemy : MonoBehaviour
         //Attack range
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        //Sight range
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
     }
 
     //Getting hit

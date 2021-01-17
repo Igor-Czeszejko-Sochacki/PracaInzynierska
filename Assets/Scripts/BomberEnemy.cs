@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class BomberEnemy : MonoBehaviour
 {
-
     public Transform player;
     public Player playerModel;
     public GameObject ammoPack;
@@ -117,6 +116,7 @@ public class BomberEnemy : MonoBehaviour
             explosion.Play();
             exploded = true;
             playerModel.Health = playerModel.Health - damage;
+            playerModel.timeFromAttack = 0;
         }
 
         //Stoping the enemy and rotating in the direction of the player
@@ -129,7 +129,6 @@ public class BomberEnemy : MonoBehaviour
             Destroy(gameObject,0.3f);
             GameObject ammoPrefab = Instantiate(ammoPack);
             ammoPrefab.transform.position = transform.position + ammoPackVector;
-            //+ newVector2
         }
     }
 
