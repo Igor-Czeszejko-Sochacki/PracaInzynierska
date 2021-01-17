@@ -34,9 +34,11 @@ public class SmallEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Reseting melee cooldown
         attackInterval -= Time.unscaledDeltaTime;
         if (attackInterval <= 0 && attacked == true)
             attacked = false;
+
         //Checking player position and doing action according to the distance
         if (Vector3.Distance(player.position, transform.position) <= sightRange)
             playerIsInRange = true;

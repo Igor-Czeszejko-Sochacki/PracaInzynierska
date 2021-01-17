@@ -3,50 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ShooterEnemy : MonoBehaviour
+public class BossEnemy : MonoBehaviour
 {
     public Transform player;
     public Player playerModel;
-    public GameObject ammoPack;
     private NavMeshAgent agent;
     public LayerMask mask;
 
     //Enemy stats
-    public int health = 100;
+    public int health = 2000;
     public int damage = 5;
     private bool isDead = false;
-    public float sightRange;
-    public float attackRange;
+    public float sightRange = 200;
+    public float attackRange = 5;
 
     //Timer to wait for another shot
-    public float shootingInterval = 2f;
-    private float shootingTimer;
+    public float shootingInterval = 0.5f;
+    private float shootingTimer = 0.5f;
+    public float attackDuration = 5;
+    public float attackCooldown = 5;
+    public float attackInterval = 0.5f;
 
     //Vectors for bullet transformation
     Vector3 newVector = new Vector3(0, (1 / 2), 0);
-    Vector3 ammoPackVector = new Vector3(0.5f, -1.85f, 0);
 
     //States
+    public bool atacking = false;
     public bool playerIsInRange = false;
     public bool playerInAttackRange = false;
+    public bool attackedMelee = false;
 
-    //Pathfinding to random point
-    public Vector3 walkPoint;
-    public bool walkPointSet;
-    public float walkPointRange;
 
     void Start()
     {
         playerModel = GameObject.Find("Player").GetComponent<Player>();
         player = GameObject.Find("Player").transform;
-        shootingTimer = 0.5f;
-        attackRange = Random.Range(5, 20);
-        sightRange = Random.Range(attackRange,40);
         agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
+        //Reseting melee cooldown
+        attackInterval -= Time.unscaledDeltaTime;
+        if (attackInterval <= 0 && attackedMelee == true)
+            attackedMelee = false;
+
         //Checking player position and doing action according to the distance
         if (Vector3.Distance(player.position, transform.position) <= sightRange)
             playerIsInRange = true;
@@ -58,77 +59,69 @@ public class ShooterEnemy : MonoBehaviour
         else
             playerInAttackRange = false;
 
-        if (playerIsInRange == false && playerInAttackRange == false)
+        //Reseting shooting attack cooldown
+        if (attackDuration < 0)
         {
-            Patroling();
+            attackCooldown -= Time.deltaTime;
+            if (attackCooldown <= 0)
+            {
+                attackDuration = 5;
+                attackCooldown = 5;
+            }
         }
+
+        //Doing actions accrding to the distance from the player
         if (playerIsInRange == true && playerInAttackRange == false)
-        {
+        {  
             Chasing();
         }
+
         if (playerIsInRange == true && playerInAttackRange == true)
-        {
+        {  
             Attacking();
         }
-    }
-
-    private void Patroling()
-    {
-        //Checking if enemy has a walk point
-        if (walkPointSet == false)
-        {
-            SearchWalkPoint();
-        }
-        if (walkPointSet == true)
-        {
-            agent.SetDestination(walkPoint);
-        }
-
-        //Checking if enenmy is close to the walk point
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-        if (distanceToWalkPoint.magnitude < 1f)
-        {
-            walkPointSet = false;
-        }
-    }
-
-    private void SearchWalkPoint()
-    {
-        //Generating random coordinates for enemy to patrol and creating Vector with them
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-        
-        //Checking if the walk point is withing the map
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, mask))
-            walkPointSet = true;
     }
 
     private void Chasing()
     {
         //Enemy is chasing the player
         agent.SetDestination(player.position);
-        transform.LookAt(player);
+        
+        //Attacking if the duration if still positive number
+        if (attackDuration >= 0)
+        {
+            //Shooting
+            shootingTimer -= Time.deltaTime;
+            if (shootingTimer <= 0 && Vector3.Distance(transform.position, player.transform.position) <= sightRange)
+            {
+                shootingTimer = shootingInterval;
+                GameObject bullet = ObjectPoolingManger.Instance.SpawnBullet(false, damage);
+                bullet.transform.position = transform.position + transform.forward * 2;
+                bullet.transform.forward = ((playerModel.cylinder.transform.position - newVector) - transform.position).normalized;
+                bullet.transform.Rotate(Vector3.right * 90);
+            }
+
+            //Substracting attack duration
+            attackDuration -= Time.deltaTime;
+        }
+        
     }
 
+    //Melee attacking
     private void Attacking()
     {
-        //Stoping the enemy and rotating in the direction of the player
+        //Stoping the enemy
         agent.SetDestination(transform.position);
-        transform.LookAt(player);
 
-        //Shooting
-        shootingTimer -= Time.deltaTime;
-        if (shootingTimer <= 0 && Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+        //Attacking the player
+        if (attackedMelee == false)
         {
-            shootingTimer = shootingInterval;
-            GameObject bullet = ObjectPoolingManger.Instance.SpawnBullet(false, damage);
-            bullet.transform.position = transform.position + transform.forward*2;
-            bullet.transform.forward = ((playerModel.cylinder.transform.position - newVector) - transform.position).normalized;
-            bullet.transform.Rotate(Vector3.right * 90);
+            playerModel.Health -= damage;
+            playerModel.timeFromAttack = 0;
+            attackedMelee = true;
+            attackInterval = 0.5f;
         }
     }
-
 
     //Gizmo to better show enemy range
     private void OnDrawGizmosSelected()
@@ -148,7 +141,7 @@ public class ShooterEnemy : MonoBehaviour
         //Checking collision
         if (characterCollider.GetComponent<BulletLogic>() != null)
         {
-            
+
             BulletLogic bullet = characterCollider.GetComponent<BulletLogic>();
 
             //Checking if bullet was shot by player
@@ -164,8 +157,6 @@ public class ShooterEnemy : MonoBehaviour
                 bullet.gameObject.SetActive(false);
                 isDead = true;
                 Destroy(gameObject);
-                GameObject ammoPrefab = Instantiate(ammoPack);
-                ammoPrefab.transform.position = transform.position + ammoPackVector;
             }
         }
     }
