@@ -14,6 +14,7 @@ public class ShotgunHandling : MonoBehaviour
     public RifleHandling rifle;
     public PistolHandling pistol;
     public TimeSlowSkill timeSlowSkill;
+    public PauseMenu pause;
 
     //Waiting for another shot
     private float totalWaitTime = 0;
@@ -116,7 +117,7 @@ public class ShotgunHandling : MonoBehaviour
 
         //Shooting the gun
         totalWaitTime += Time.unscaledDeltaTime;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && pause.isGamePaused == false)
         {
             if (shotgunAmmunition > 0 && totalWaitTime >= waitTime)
             {

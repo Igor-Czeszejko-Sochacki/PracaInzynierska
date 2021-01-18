@@ -13,6 +13,7 @@ public class RifleHandling : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public PistolHandling pistol;
     public ShotgunHandling shotgun;
+    public PauseMenu pause;
 
     //Waiting for another shot
     private float totalWaitTime = 0;
@@ -105,11 +106,11 @@ public class RifleHandling : MonoBehaviour
                 isSkillRechargeActive = false;
             }
         }
-
+        totalWaitTime += Time.deltaTime;
         //Shooting
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && pause.isGamePaused == false)
         {
-            totalWaitTime += Time.deltaTime;
+            
             if (rifleAmmunition > 0 && totalWaitTime >= waitTime)
             {
                 //Substracting ammunition

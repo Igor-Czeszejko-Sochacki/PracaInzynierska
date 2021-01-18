@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseMovement : MonoBehaviour
 {
     public Transform playerBody;
-
+    public PauseMenu pause;
     public float mouseSensitivity = 200f;
     float xRotation = 0f;
 
@@ -25,13 +25,13 @@ public class MouseMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseXaxis = mouseRecoilX + Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseYaxis = mouseRecoilY + Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-        xRotation -= mouseYaxis;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseXaxis);
-        mouseRecoilX = 0;
-        mouseRecoilY = 0;
+            float mouseXaxis = mouseRecoilX + Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            float mouseYaxis = mouseRecoilY + Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            xRotation -= mouseYaxis;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerBody.Rotate(Vector3.up * mouseXaxis);
+            mouseRecoilX = 0;
+            mouseRecoilY = 0;
     }
 }

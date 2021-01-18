@@ -13,6 +13,7 @@ public class PistolHandling : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public RifleHandling rifle;
     public ShotgunHandling shotgun;
+    public PauseMenu pause;
 
     //Ammunition
     public int initialPistolAmmunition = 90;
@@ -26,6 +27,10 @@ public class PistolHandling : MonoBehaviour
     //Recoil
     private float recoilX;
     private float recoilY;
+
+    //Waiting for another shot
+    private float totalWaitTime = 0;
+    private float waitTime = 1f;
 
     //Skill recharge
     private bool isSkillRechargeActive;
@@ -48,6 +53,7 @@ public class PistolHandling : MonoBehaviour
         bulletTransformation = new Vector3(1, 0, 0);
         gunSound = GetComponent<AudioSource>();
         pistolAmmunition = initialPistolAmmunition;
+        totalWaitTime = waitTime;
     }
 
     // Update is called once per frame
@@ -93,9 +99,10 @@ public class PistolHandling : MonoBehaviour
             damage = 300;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        totalWaitTime += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && pause.isGamePaused == false)
         {
-            if (pistolAmmunition > 0)
+            if (pistolAmmunition > 0 && totalWaitTime >= waitTime)
             {
                 //Substracting ammo
                 pistolAmmunition--;
@@ -123,6 +130,8 @@ public class PistolHandling : MonoBehaviour
                     isSkillRechargeActive = true;
                     damage = 80;
                 }
+                //Reseting time to shoot another bullet
+                totalWaitTime = 0;
             }
         }
     }
