@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\BomberEnemy.cs" />
     <Compile Include="Assets\Scripts\BossEnemy.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MouseMovement.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\Scripts\SmallEnemy.cs" />
     <Compile Include="Assets\Scripts\SpawningEnemy.cs" />
     <Compile Include="Assets\Scripts\TimeSlowSkill.cs" />
+    <Compile Include="Assets\Scripts\Victory.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <None Include="Assets\All assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -666,6 +668,24 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/morti/Desktop/Praca inzynierska/Praca inzynierska/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

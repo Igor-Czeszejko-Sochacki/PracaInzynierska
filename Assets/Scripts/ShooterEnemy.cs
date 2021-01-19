@@ -19,7 +19,7 @@ public class ShooterEnemy : MonoBehaviour
     public float attackRange;
 
     //Timer to wait for another shot
-    public float shootingInterval = 2f;
+    public float shootingInterval = 1f;
     private float shootingTimer;
 
     //Vectors for bullet transformation
@@ -40,8 +40,8 @@ public class ShooterEnemy : MonoBehaviour
         playerModel = GameObject.Find("Player").GetComponent<Player>();
         player = GameObject.Find("Player").transform;
         shootingTimer = 0.5f;
-        attackRange = Random.Range(5, 20);
-        sightRange = Random.Range(attackRange,40);
+        attackRange = Random.Range(15, 40);
+        sightRange = Random.Range(attackRange,60);
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -166,6 +166,7 @@ public class ShooterEnemy : MonoBehaviour
                 Destroy(gameObject);
                 GameObject ammoPrefab = Instantiate(ammoPack);
                 ammoPrefab.transform.position = transform.position + ammoPackVector;
+                playerModel.enemiesKilled += 1;
             }
         }
     }

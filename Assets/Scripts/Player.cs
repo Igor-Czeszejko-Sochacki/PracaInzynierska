@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public RifleHandling rifleAmmo;
     public ShotgunHandling shotgunAmmo;
     public PistolHandling pistolAmmo;
+    public PauseMenu pauseMenu;
 
     //Time passed from last hit from enemy
     public float timeFromAttack = 0;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     private float health;
     public float Health { get { return health; } set { health = value; } }
 
+    public int enemiesKilled = 0;
 
     void Start()
     {
@@ -39,6 +41,10 @@ public class Player : MonoBehaviour
         if (health < initialHealth && health > 0 && timeFromAttack >= 5)
         {
             health += healthRegeneration * Time.deltaTime;
+        }
+        if (health <= 0)
+        {
+            Die();
         }
     }
 
@@ -68,6 +74,10 @@ public class Player : MonoBehaviour
             shotgunAmmo.ShotgunAmmunition += (int)ammoPickup.ammo/4;
             Destroy(ammoPickup.gameObject);
         }
+    }
+    public void Die()
+    {
+        pauseMenu.ShowDeathScreen();
     }
 }
 

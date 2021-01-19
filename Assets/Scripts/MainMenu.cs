@@ -9,11 +9,33 @@ public class MainMenu : MonoBehaviour
    public void StartGame()
     {
         EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
     }
 
     //Quiting the game
     public void QuitGame()
     {
         Application.Quit();
+    }
+    
+    public void Level1()
+    {
+        EditorSceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+    }
+    public void Level2()
+    {
+        EditorSceneManager.LoadScene(2);
+        Time.timeScale = 1f;
+    }
+    public void Level3()
+    {
+        EditorSceneManager.LoadScene(3);
+        Time.timeScale = 1f;
+    }
+    public void Level4()
+    {
+        EditorSceneManager.LoadScene(4);
+        Time.timeScale = 1f;
     }
 }
