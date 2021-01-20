@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         health = initialHealth;
+        enemiesKilled = 0;
     }
 
     void Update()

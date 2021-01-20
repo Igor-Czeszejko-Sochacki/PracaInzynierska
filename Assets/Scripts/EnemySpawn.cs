@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
     private int waveNumber = 0;
     public float timeBetweenWaves = 60;
     public float waveCountdown = 60;
-    public Transform objectlocation;
+    //public Transform objectlocation;
     public Transform[] spawnPoints;
     public GameObject enemy;
 

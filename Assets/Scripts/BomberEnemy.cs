@@ -129,6 +129,7 @@ public class BomberEnemy : MonoBehaviour
             Destroy(gameObject,0.3f);
             GameObject ammoPrefab = Instantiate(ammoPack);
             ammoPrefab.transform.position = transform.position + ammoPackVector;
+            playerModel.enemiesKilled += 1;
         }
     }
 
@@ -169,6 +170,7 @@ public class BomberEnemy : MonoBehaviour
                 Destroy(gameObject);
                 GameObject ammoPrefab = Instantiate(ammoPack);
                 ammoPrefab.transform.position = transform.position + ammoPackVector;
+                playerModel.enemiesKilled += 1;
             }
         }
     }
