@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public RifleHandling rifleAmmo;
     public ShotgunHandling shotgunAmmo;
     public PistolHandling pistolAmmo;
-    public PauseMenu pauseMenu;
+    public MenuController menu;
 
     //Time passed from last hit from enemy
     public float timeFromAttack = 0;
@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        pauseMenu.ShowDeathScreen();
+        menu.ShowDeathScreen();
     }
 }
 

@@ -127,7 +127,8 @@ public class SpawningEnemy : MonoBehaviour
                 Vector3 position = transform.position;
                 Destroy(gameObject);
                 GameObject ammoPrefab = Instantiate(ammoPack);
-                ammoPrefab.transform.position = transform.position + ammoPackVector; 
+                ammoPrefab.transform.position = transform.position + ammoPackVector;
+                playerModel.enemiesKilled += 1;
             }
         }
     }

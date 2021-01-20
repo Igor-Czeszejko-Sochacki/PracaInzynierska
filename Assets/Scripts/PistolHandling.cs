@@ -13,7 +13,7 @@ public class PistolHandling : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public RifleHandling rifle;
     public ShotgunHandling shotgun;
-    public PauseMenu pause;
+    public MenuController menu;
 
     //Ammunition
     public int initialPistolAmmunition = 90;
@@ -100,7 +100,7 @@ public class PistolHandling : MonoBehaviour
         }
 
         totalWaitTime += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && pause.isGamePaused == false)
+        if (Input.GetMouseButtonDown(0) && menu.isGamePaused == false)
         {
             if (pistolAmmunition > 0 && totalWaitTime >= waitTime)
             {

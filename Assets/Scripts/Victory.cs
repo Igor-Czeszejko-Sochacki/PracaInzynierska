@@ -9,7 +9,7 @@ public class Victory : MonoBehaviour
     public Player player;
     public int level1KilledEnemies = 126;
     public int level2KilledEnemies = 65;
-    public PauseMenu menu;
+    public MenuController menu;
 
     // Update is called once per frame
     void Update()
