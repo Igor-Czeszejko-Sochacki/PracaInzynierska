@@ -20,22 +20,22 @@ public class MainMenu : MonoBehaviour
     
     public void Level1()
     {
-        EditorSceneManager.LoadScene(1);
+        EditorSceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
     public void Level2()
     {
-        EditorSceneManager.LoadScene(2);
+        EditorSceneManager.LoadScene(4);
         Time.timeScale = 1f;
     }
     public void Level3()
     {
-        EditorSceneManager.LoadScene(3);
+        EditorSceneManager.LoadScene(6);
         Time.timeScale = 1f;
     }
     public void Level4()
     {
-        EditorSceneManager.LoadScene(4);
+        EditorSceneManager.LoadScene(8);
         Time.timeScale = 1f;
     }
 }

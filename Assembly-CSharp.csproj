@@ -77,7 +77,6 @@
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Level2EnemySpawning.cs" />
-    <Compile Include="Assets\Scripts\Level3EnemySpawning.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MouseMovement.cs" />
@@ -89,6 +88,7 @@
     <Compile Include="Assets\Scripts\ShotgunHandling.cs" />
     <Compile Include="Assets\Scripts\SmallEnemy.cs" />
     <Compile Include="Assets\Scripts\SpawningEnemy.cs" />
+    <Compile Include="Assets\Scripts\StoryMenu.cs" />
     <Compile Include="Assets\Scripts\TimeSlowSkill.cs" />
     <Compile Include="Assets\Scripts\Victory.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />

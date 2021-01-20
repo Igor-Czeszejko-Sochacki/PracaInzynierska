@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour
 {
     private int waveNumber = 0;
-    public float timeBetweenWaves = 60;
-    public float waveCountdown = 60;
+    public float timeBetweenWaves = 90;
+    public float waveCountdown = 90;
     //public Transform objectlocation;
     public Transform[] spawnPoints;
     public GameObject enemy;

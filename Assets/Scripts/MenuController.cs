@@ -45,7 +45,7 @@ public class MenuController : MonoBehaviour
     
     public void returnToMenu()
     {
-        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex - 1);
+        EditorSceneManager.LoadScene(0);
     }
 
     public void QuitGame()

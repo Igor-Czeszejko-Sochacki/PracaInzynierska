@@ -8796,7 +8796,7 @@ MonoBehaviour:
   rifle: {fileID: 1624137043}
   pistol: {fileID: 674852920}
   timeSlowSkill: {fileID: 1919891271}
-  menu: {fileID: 0}
+  menu: {fileID: 1351681567}
   damage: 10
   initialShotgunAmmunition: 30
 --- !u!1 &271614021
@@ -13196,7 +13196,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 1702112974}
   rifle: {fileID: 1624137043}
   shotgun: {fileID: 268202692}
-  menu: {fileID: 0}
+  menu: {fileID: 1351681567}
   initialPistolAmmunition: 90
   damage: 80
   bulletLifeTime: 20
@@ -17658,8 +17658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10dde8da24a5c2b4eb19f5f12fc7a61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenWaves: 60
-  waveCountdown: 60
+  timeBetweenWaves: 90
+  waveCountdown: 90
   spawnPoints:
   - {fileID: 1874563726}
   - {fileID: 1304068024}
@@ -18011,7 +18011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 1956320816}
-  menu: {fileID: 0}
+  menu: {fileID: 1351681567}
   mouseSensitivity: 100
 --- !u!1 &974924915
 GameObject:
@@ -27245,7 +27245,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 1129321588}
   pistol: {fileID: 674852920}
   shotgun: {fileID: 268202692}
-  menu: {fileID: 0}
+  menu: {fileID: 1351681567}
   damage: 20
   bulletLifeTime: 20
   initialRifleAmmunition: 100
@@ -37712,10 +37712,10 @@ MonoBehaviour:
   rifleAmmo: {fileID: 1624137043}
   shotgunAmmo: {fileID: 268202692}
   pistolAmmo: {fileID: 674852920}
-  menu: {fileID: 0}
+  menu: {fileID: 1351681567}
   timeFromAttack: 0
   healthRegeneration: 5
-  initialHealth: 1000000
+  initialHealth: 100
   enemiesKilled: 0
 --- !u!114 &1956320820
 MonoBehaviour:
