@@ -91,8 +91,9 @@ public class ShotgunHandling : MonoBehaviour
         }
 
         //Truning off the skill
-        if (isSkillActive == true)
+        if (isSkillActive == true && menu.isGamePaused == false)
         {
+            timeSlowSkill.slowDownTime();
             skillTimer -= Time.unscaledDeltaTime;
             if (skillTimer <= 0)
             {
@@ -106,7 +107,7 @@ public class ShotgunHandling : MonoBehaviour
         // Recharging the skill
         if (isSkillRechargeActive == true)
         {
-            skillRechargeTimer += Time.unscaledDeltaTime;
+            skillRechargeTimer += Time.deltaTime;
             if (skillRechargeTimer >= 5)
             {
                 isSkillRechargeActive = false;

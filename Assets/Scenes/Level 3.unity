@@ -54854,6 +54854,7 @@ MonoBehaviour:
   slowDownFactor: 0.2
   normalTime: 1
   timeCheck: 0
+  gameisPaused: {fileID: 1427545292}
 --- !u!4 &1396669740
 Transform:
   m_ObjectHideFlags: 0

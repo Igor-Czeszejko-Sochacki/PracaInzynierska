@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
         {
             health += healthRegeneration * Time.deltaTime;
         }
-        if (health <= 0)
+        if (health < 1)
         {
             Die();
         }

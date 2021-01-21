@@ -6452,7 +6452,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1574951903}
 --- !u!33 &241149988
@@ -18367,17 +18367,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 1521155854}
   m_IsSelectable: 1
-  m_SelectedFaces: 04000000
-  m_SelectedEdges:
-  - a: 16
-    b: 17
-  - a: 18
-    b: 16
-  - a: 17
-    b: 19
-  - a: 19
-    b: 18
-  m_SelectedVertices: 10000000110000001200000013000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &994662007
 Transform:
   m_ObjectHideFlags: 0
@@ -26837,7 +26829,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2548
+  m_Name: pb_Mesh24738
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32335,6 +32327,7 @@ MonoBehaviour:
   slowDownFactor: 0.2
   normalTime: 1
   timeCheck: 0
+  gameisPaused: {fileID: 1351681567}
 --- !u!4 &1919891272
 Transform:
   m_ObjectHideFlags: 0
@@ -44414,17 +44407,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 1667805369}
   m_IsSelectable: 1
-  m_SelectedFaces: 9b000000
-  m_SelectedEdges:
-  - a: 620
-    b: 621
-  - a: 621
-    b: 622
-  - a: 622
-    b: 623
-  - a: 623
-    b: 620
-  m_SelectedVertices: 6c0200006d0200006e0200006f020000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!65 &2009374987
 BoxCollider:
   m_ObjectHideFlags: 0

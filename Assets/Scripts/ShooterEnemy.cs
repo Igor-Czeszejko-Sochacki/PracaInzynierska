@@ -108,14 +108,14 @@ public class ShooterEnemy : MonoBehaviour
     {
         //Enemy is chasing the player
         agent.SetDestination(player.position);
-        transform.LookAt(player);
     }
 
     private void Attacking()
     {
         //Stoping the enemy and rotating in the direction of the player
         agent.SetDestination(transform.position);
-        transform.LookAt(player);
+        Vector3 targetPostition = new Vector3(player.position.x,transform.position.y,player.position.z);
+        this.transform.LookAt(targetPostition);
 
         //Shooting
         shootingTimer -= Time.deltaTime;

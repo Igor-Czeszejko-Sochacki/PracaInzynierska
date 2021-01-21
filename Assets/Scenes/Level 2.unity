@@ -30418,7 +30418,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1040664335
 Transform:
@@ -31166,7 +31166,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60990
+  m_Name: pb_Mesh84998
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50924,7 +50924,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1777576526
 Transform:
@@ -52254,7 +52254,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60290
+  m_Name: pb_Mesh84310
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53754,6 +53754,7 @@ MonoBehaviour:
   jumpHeight: 3
   gravity: -19.62
   crouchHeight: 0.5
+  jumpRecharge: 0
 --- !u!143 &1837976651
 CharacterController:
   m_ObjectHideFlags: 0
@@ -56438,6 +56439,7 @@ MonoBehaviour:
   slowDownFactor: 0.2
   normalTime: 1
   timeCheck: 0
+  gameisPaused: {fileID: 1021269062}
 --- !u!4 &1993074449
 Transform:
   m_ObjectHideFlags: 0

@@ -16,11 +16,13 @@ public class playerMovement : MonoBehaviour
     public float jumpHeight = 3f;
     public float gravity = -9.81f;
     public float crouchHeight = 0.5f;
-
+    public float jumpRecharge = 0f;
     // Update is called once per frame
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        jumpRecharge -= Time.deltaTime;
 
         if (isGrounded && velocity.y < 0)
         {
@@ -41,9 +43,10 @@ public class playerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && jumpRecharge <= 0f)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            jumpRecharge = 1f;
         }
 
         if (Input.GetKey(KeyCode.LeftControl))

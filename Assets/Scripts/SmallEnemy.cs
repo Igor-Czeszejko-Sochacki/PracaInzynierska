@@ -10,7 +10,7 @@ public class SmallEnemy : MonoBehaviour
     private NavMeshAgent agent;
 
     //Enemy stats
-    public int health = 100;
+    public int health = 50;
     public int damage = 5;
     public float sightRange;
     public float attackRange = 3;
@@ -29,6 +29,7 @@ public class SmallEnemy : MonoBehaviour
         player = GameObject.Find("Player").transform;
         sightRange = Random.Range(90, 100);
         agent = GetComponent<NavMeshAgent>();
+        health = 50;
     }
 
     // Update is called once per frame
