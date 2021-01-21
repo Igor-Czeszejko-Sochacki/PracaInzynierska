@@ -7,7 +7,6 @@ public class EnemySpawn : MonoBehaviour
     private int waveNumber = 0;
     public float timeBetweenWaves = 90;
     public float waveCountdown = 90;
-    //public Transform objectlocation;
     public Transform[] spawnPoints;
     public GameObject enemy;
 
@@ -21,7 +20,7 @@ public class EnemySpawn : MonoBehaviour
     void Update()
     {
         waveCountdown -= Time.deltaTime;
-        if (waveCountdown <= 0 && waveNumber <= 4)
+        if (waveCountdown <= 0 && waveNumber <= 2)
         {
             waveNumber++;
             waveCountdown = timeBetweenWaves;

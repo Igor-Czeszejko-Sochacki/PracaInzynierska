@@ -157,6 +157,7 @@ public class BossEnemy : MonoBehaviour
                 bullet.gameObject.SetActive(false);
                 isDead = true;
                 Destroy(gameObject);
+                playerModel.isBossKilled = true;
             }
         }
     }

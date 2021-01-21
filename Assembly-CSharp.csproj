@@ -73,10 +73,12 @@
     <Compile Include="Assets\Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\Scripts\BomberEnemy.cs" />
     <Compile Include="Assets\Scripts\BossEnemy.cs" />
+    <Compile Include="Assets\Scripts\BossFightEnemySpawn.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Level2EnemySpawning.cs" />
+    <Compile Include="Assets\Scripts\LightColorController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MouseMovement.cs" />
@@ -110,7 +112,6 @@
     <None Include="Assets\All assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\All assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\All assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\All assets\AddOns\Mg3D_Hats\README.txt" />
     <None Include="Assets\All assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\All assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\All assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

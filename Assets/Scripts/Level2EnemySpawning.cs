@@ -33,10 +33,10 @@ public class Level2EnemySpawning : MonoBehaviour
             thirdWall.SetActive(false);
             forthEnemies.SetActive(true);
         }
-        else if (player.enemiesKilled == 64)
-        {
-            menu.VictoryScreen();
-        }
+        //else if (player.enemiesKilled == 64)
+        //{
+        //    menu.VictoryScreen();
+        //}
             
     }
 }

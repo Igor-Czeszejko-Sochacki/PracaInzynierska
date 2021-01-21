@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public float Health { get { return health; } set { health = value; } }
 
     public int enemiesKilled = 0;
+    public bool isBossKilled = false;
 
     void Start()
     {

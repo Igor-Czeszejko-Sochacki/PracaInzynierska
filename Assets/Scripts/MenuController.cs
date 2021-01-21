@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    public bool isInMenu = false;
     public bool isGamePaused = false;
     public GameObject pauseMenu;
     public GameObject controllsMenu;
@@ -19,7 +20,7 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isGamePaused == true)
+            if (isGamePaused == true && isInMenu == false)
                 Resume();
             else
                 Pause();
@@ -30,13 +31,11 @@ public class MenuController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
-        //deathMenu.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
     }
     public void Pause()
     {
-       // deathMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -59,12 +58,15 @@ public class MenuController : MonoBehaviour
         controllsMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
+        isInMenu = true;
     }
 
     public void BackToPauseMenu()
     {
         pauseMenu.SetActive(true);
         controllsMenu.SetActive(false);
+        Time.timeScale = 0f;
+        isInMenu = false;
     }
 
     public void ShowDeathScreen()

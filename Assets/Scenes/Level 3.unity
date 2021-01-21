@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f4c2d69ce88d265448052f4a96ef6618, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 506daaba14aa89045bbdeae509361cf2, type: 2}
 --- !u!1001 &6603234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9697,7 +9697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &223459100
 Transform:
   m_ObjectHideFlags: 0
@@ -12725,7 +12725,7 @@ PrefabInstance:
     - target: {fileID: 8698538345186270545, guid: a9c454296c77e5a449d566199600f803,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -75.02824
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 8698538345186270545, guid: a9c454296c77e5a449d566199600f803,
         type: 3}
@@ -12735,7 +12735,7 @@ PrefabInstance:
     - target: {fileID: 8698538345186270545, guid: a9c454296c77e5a449d566199600f803,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.348654
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 8698538345186270545, guid: a9c454296c77e5a449d566199600f803,
         type: 3}
@@ -23096,6 +23096,7 @@ MonoBehaviour:
   player: {fileID: 543249345}
   level1KilledEnemies: 10
   level2KilledEnemies: 65
+  isBoosKilled: 0
   menu: {fileID: 1427545292}
 --- !u!114 &543249343
 MonoBehaviour:
@@ -23158,8 +23159,9 @@ MonoBehaviour:
   menu: {fileID: 1427545292}
   timeFromAttack: 0
   healthRegeneration: 5
-  initialHealth: 100
+  initialHealth: 10000
   enemiesKilled: 0
+  isBossKilled: 0
 --- !u!1 &554018135
 GameObject:
   m_ObjectHideFlags: 0
@@ -27388,7 +27390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &670010151
 Transform:
   m_ObjectHideFlags: 0
@@ -43191,7 +43193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1050201204
 Transform:
   m_ObjectHideFlags: 0
@@ -55110,7 +55112,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14404
+  m_Name: pb_Mesh158120
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -57525,8 +57527,8 @@ GameObject:
   m_Name: ForthRoomEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1481743355
 Transform:
@@ -61979,7 +61981,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99788
+  m_Name: pb_Mesh159852
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -62153,8 +62155,8 @@ GameObject:
   m_Name: SecondRoomEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1635952996
 Transform:
@@ -64417,8 +64419,8 @@ GameObject:
   m_Name: ThirdRoomEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1696078455
 Transform:
@@ -66416,6 +66418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723162309}
   - component: {fileID: 1723162308}
+  - component: {fileID: 1723162310}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -66459,6 +66462,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723162310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723162307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848e94321da41cd4cabae587a4df7345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 543249345}
+  level1KilledEnemies: 126
+  level2KilledEnemies: 64
+  isBoosKilled: 0
+  menu: {fileID: 1427545292}
 --- !u!1 &1729246524
 GameObject:
   m_ObjectHideFlags: 0
@@ -66674,7 +66694,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -64
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
@@ -66684,7 +66704,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
@@ -70865,7 +70885,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99866
+  m_Name: pb_Mesh159780
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -84158,7 +84178,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99658
+  m_Name: pb_Mesh159652
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -85022,7 +85042,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.93786
+      value: -78
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
@@ -85032,7 +85052,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.452814
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
@@ -85172,7 +85192,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.121902
+      value: -37
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
@@ -85182,7 +85202,7 @@ PrefabInstance:
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.24432373
+      value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 8363444939808378780, guid: 842f3bd1064e13841a230c3ccf17a248,
         type: 3}

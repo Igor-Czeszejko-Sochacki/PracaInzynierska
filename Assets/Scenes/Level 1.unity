@@ -23929,7 +23929,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4bb12e2031b9add4ab7d29bb4095eadd, type: 2}
+  - {fileID: 2100000, guid: f856ed6436664034383d5fa42b86b206, type: 2}
   - {fileID: 2100000, guid: f856ed6436664034383d5fa42b86b206, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -37715,8 +37715,9 @@ MonoBehaviour:
   menu: {fileID: 1351681567}
   timeFromAttack: 0
   healthRegeneration: 5
-  initialHealth: 100
+  initialHealth: 10000
   enemiesKilled: 0
+  isBossKilled: 0
 --- !u!114 &1956320820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37749,8 +37750,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1956320818}
-  level1KilledEnemies: 10
+  level1KilledEnemies: 84
   level2KilledEnemies: 65
+  isBoosKilled: 0
   menu: {fileID: 1351681567}
 --- !u!1001 &1964191586
 PrefabInstance:

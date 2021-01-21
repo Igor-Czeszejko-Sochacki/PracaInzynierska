@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f060f68cd171e484e816a3e87cb6b9ed, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8098551ae1c1c5347abcc5ca0ad60817, type: 2}
 --- !u!1001 &1338931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
   rifle: {fileID: 1785113667}
   pistol: {fileID: 1015182826}
   timeSlowSkill: {fileID: 1993074448}
-  menu: {fileID: 0}
+  menu: {fileID: 1021269062}
   damage: 10
   initialShotgunAmmunition: 30
 --- !u!4 &2726532 stripped
@@ -3253,7 +3253,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 500161663}
+    m_TransformParent: {fileID: 325288788}
     m_Modifications:
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -97.815865
+      value: -98
       objectReference: {fileID: 0}
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
@@ -3293,7 +3293,7 @@ PrefabInstance:
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
@@ -7393,6 +7393,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f34f1ea0405ab743a02014111c92b47, type: 3}
+--- !u!114 &226578107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4796076521357920709, guid: 780810ab295295a4d990fc6a49411fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1021269059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &228187153
 GameObject:
   m_ObjectHideFlags: 0
@@ -9300,6 +9312,7 @@ Transform:
   - {fileID: 761238178}
   - {fileID: 816256601}
   - {fileID: 1922430162}
+  - {fileID: 1623129786}
   m_Father: {fileID: 1443451865}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14435,7 +14448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &500161663
 Transform:
   m_ObjectHideFlags: 0
@@ -14467,7 +14480,6 @@ Transform:
   - {fileID: 753053916}
   - {fileID: 1701953054}
   - {fileID: 1735101896}
-  - {fileID: 1623129786}
   m_Father: {fileID: 1443451865}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25306,7 +25318,7 @@ PrefabInstance:
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.159508
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
@@ -25316,7 +25328,7 @@ PrefabInstance:
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -44.52929
+      value: -53
       objectReference: {fileID: 0}
     - target: {fileID: 6442884701544834535, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
@@ -25366,12 +25378,12 @@ PrefabInstance:
     - target: {fileID: 6442884702777295099, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.0505075
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6442884702777295099, guid: 7f34f1ea0405ab743a02014111c92b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5425057
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f34f1ea0405ab743a02014111c92b47, type: 3}
@@ -28957,7 +28969,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 730136351}
   rifle: {fileID: 1785113667}
   shotgun: {fileID: 1338935}
-  menu: {fileID: 0}
+  menu: {fileID: 1021269062}
   initialPistolAmmunition: 90
   damage: 80
   bulletLifeTime: 20
@@ -42335,9 +42347,9 @@ MonoBehaviour:
   shotgun: {fileID: 1338935}
   pistol: {fileID: 1015182826}
   currentWeapon: {fileID: 1837976647}
-  ammunitionText: {fileID: 0}
-  heathText: {fileID: 0}
-  skillShowcase: {fileID: 0}
+  ammunitionText: {fileID: 226578107}
+  heathText: {fileID: 1870967158}
+  skillShowcase: {fileID: 1899739100}
 --- !u!4 &1448991999
 Transform:
   m_ObjectHideFlags: 0
@@ -44524,7 +44536,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60064
+  m_Name: pb_Mesh86444
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51426,7 +51438,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 1963734794}
   pistol: {fileID: 1015182826}
   shotgun: {fileID: 1338935}
-  menu: {fileID: 0}
+  menu: {fileID: 1021269062}
   damage: 20
   bulletLifeTime: 20
   initialRifleAmmunition: 100
@@ -52710,7 +52722,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59904
+  m_Name: pb_Mesh86284
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53710,9 +53722,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1837976652}
-  level1KilledEnemies: 126
+  level1KilledEnemies: 84
   level2KilledEnemies: 65
-  menu: {fileID: 0}
+  isBoosKilled: 0
+  menu: {fileID: 1021269062}
 --- !u!114 &1837976650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53771,11 +53784,12 @@ MonoBehaviour:
   rifleAmmo: {fileID: 1785113667}
   shotgunAmmo: {fileID: 1338935}
   pistolAmmo: {fileID: 1015182826}
-  menu: {fileID: 0}
+  menu: {fileID: 1021269062}
   timeFromAttack: 0
   healthRegeneration: 5
-  initialHealth: 100
+  initialHealth: 1000000
   enemiesKilled: 0
+  isBossKilled: 0
 --- !u!1001 &1841143223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54496,6 +54510,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9c454296c77e5a449d566199600f803, type: 3}
+--- !u!114 &1870967158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8905937037767706522, guid: 780810ab295295a4d990fc6a49411fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1021269059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1888615784
 GameObject:
   m_ObjectHideFlags: 0
@@ -54530,6 +54556,18 @@ Transform:
   m_Father: {fileID: 1587197654}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899739100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8753851209272976168, guid: 780810ab295295a4d990fc6a49411fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1021269059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1900394234
 PrefabInstance:
   m_ObjectHideFlags: 0
