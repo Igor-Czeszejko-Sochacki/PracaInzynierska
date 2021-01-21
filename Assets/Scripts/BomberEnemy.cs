@@ -105,7 +105,6 @@ public class BomberEnemy : MonoBehaviour
     {
         //Enemy is chasing the player
         agent.SetDestination(player.position);
-        transform.LookAt(player);
     }
 
     private void Explode()
@@ -121,7 +120,6 @@ public class BomberEnemy : MonoBehaviour
 
         //Stoping the enemy and rotating in the direction of the player
         agent.SetDestination(transform.position);
-        transform.LookAt(player);
         health = 0;
         if (health <= 0 && isDead == false)
         {

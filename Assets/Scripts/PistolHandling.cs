@@ -36,7 +36,7 @@ public class PistolHandling : MonoBehaviour
     private bool isSkillRechargeActive;
     public bool IsSkillRechargeActive { get { return isSkillRechargeActive; } set { isSkillRechargeActive = value; } }
 
-    private float skillRechargeTimer = 5;
+    private float skillRechargeTimer = 8;
     public float SkillRechargeTimer { get { return skillRechargeTimer; } set { skillRechargeTimer = value; } }
 
 
@@ -110,7 +110,7 @@ public class PistolHandling : MonoBehaviour
                 //Shooting bullet
                 GameObject bulletObject = ObjectPoolingManger.Instance.SpawnBullet(true,damage);
                 bulletObject.transform.position = playerCamera.transform.position + (playerCamera.transform.forward * 2);
-                bulletObject.transform.rotation = gun.transform.rotation;
+                bulletObject.transform.rotation = playerCamera.transform.rotation * Quaternion.Euler(0, 180, 0);
                 bulletObject.transform.Rotate(Vector3.right * -90);
 
                 //Playing gun sound and particules

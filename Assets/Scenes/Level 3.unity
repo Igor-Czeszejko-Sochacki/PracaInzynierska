@@ -14519,6 +14519,8 @@ GameObject:
   - component: {fileID: 342168610}
   - component: {fileID: 342168609}
   - component: {fileID: 342168608}
+  - component: {fileID: 342168614}
+  - component: {fileID: 342168613}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -15819,6 +15821,32 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &342168613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342168606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 1, z: 16.000113}
+  m_Center: {x: 7.5, y: 8.5, z: -8.000037}
+--- !u!65 &342168614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342168606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 7.5, y: 6.5, z: -0.5}
 --- !u!1001 &347328005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20550,6 +20578,8 @@ GameObject:
   - component: {fileID: 501576603}
   - component: {fileID: 501576602}
   - component: {fileID: 501576601}
+  - component: {fileID: 501576606}
+  - component: {fileID: 501576607}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -21853,6 +21883,32 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &501576606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501576599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5, z: 5}
+  m_Center: {x: 0.5, y: 6.5, z: -5.5}
+--- !u!65 &501576607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501576599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.000107, y: 1, z: 12.000013}
+  m_Center: {x: 12.500053, y: 8.5, z: -5.9999933}
 --- !u!43 &502320993
 Mesh:
   m_ObjectHideFlags: 0
@@ -23094,7 +23150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 543249345}
-  level1KilledEnemies: 10
+  level1KilledEnemies: 84
   level2KilledEnemies: 65
   isBoosKilled: 0
   menu: {fileID: 1427545292}
@@ -23120,6 +23176,7 @@ MonoBehaviour:
   jumpHeight: 3
   gravity: -19.62
   crouchHeight: 0.5
+  jumpRecharge: 0
 --- !u!143 &543249344
 CharacterController:
   m_ObjectHideFlags: 0
@@ -27431,7 +27488,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99722
+  m_Name: pb_Mesh45750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28564,7 +28621,7 @@ MonoBehaviour:
   pistol: {fileID: 1361491316}
   timeSlowSkill: {fileID: 1396669739}
   menu: {fileID: 1427545292}
-  damage: 10
+  damage: 15
   initialShotgunAmmunition: 30
 --- !u!1001 &705301560
 PrefabInstance:
@@ -33414,7 +33471,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99924
+  m_Name: pb_Mesh45302
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41617,7 +41674,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99884
+  m_Name: pb_Mesh47306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -59800,7 +59857,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-99726
+  m_Name: pb_Mesh45568
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -76359,6 +76416,7 @@ GameObject:
   - component: {fileID: 1941851746}
   - component: {fileID: 1941851745}
   - component: {fileID: 1941851744}
+  - component: {fileID: 1941851755}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -82651,17 +82709,22 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 1012622430}
   m_IsSelectable: 1
-  m_SelectedFaces: 9b000000
-  m_SelectedEdges:
-  - a: 620
-    b: 621
-  - a: 621
-    b: 622
-  - a: 622
-    b: 623
-  - a: 623
-    b: 620
-  m_SelectedVertices: 6c0200006d0200006e0200006f020000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
+--- !u!65 &1941851755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941851742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14, y: 1, z: 10}
+  m_Center: {x: 8, y: 10.5, z: -5}
 --- !u!1 &1965498640
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class BossEnemy : MonoBehaviour
     public LayerMask mask;
 
     //Enemy stats
-    public int health = 2000;
+    public int health = 5000;
     public int damage = 5;
     private bool isDead = false;
     public float sightRange = 200;

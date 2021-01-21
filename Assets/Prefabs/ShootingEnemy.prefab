@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Bits: 256
   health: 100
   damage: 5
-  sightRange: 40
+  sightRange: 70
   attackRange: 20
   shootingInterval: 1
   playerIsInRange: 0
