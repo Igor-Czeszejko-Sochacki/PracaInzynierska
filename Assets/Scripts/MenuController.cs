@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,10 +11,12 @@ public class MenuController : MonoBehaviour
     public GameObject controllsMenu;
     public GameObject deathMenu;
     public GameObject victoryMenu;
+
     private void Start()
     {
         Time.timeScale = 1f;
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -33,10 +34,12 @@ public class MenuController : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
+        Cursor.visible = false;
     }
     public void Pause()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
@@ -44,7 +47,8 @@ public class MenuController : MonoBehaviour
     
     public void returnToMenu()
     {
-        EditorSceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
+        Cursor.visible = true;
     }
 
     public void QuitGame()
@@ -77,12 +81,14 @@ public class MenuController : MonoBehaviour
         deathMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
+        Cursor.visible = true;
     }
     public void RestartCurrentLevel()
     {
         Scene thisScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(thisScene.name);
         Time.timeScale = 1f;
+        Cursor.visible = false;
     } 
     public void VictoryScreen()
     {
@@ -90,11 +96,13 @@ public class MenuController : MonoBehaviour
         victoryMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
+        Cursor.visible = true;
     }
 
     public void StartNextLevel()
     {
-        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex + 1);
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1f;
     }
 }

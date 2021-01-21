@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StoryMenu : MonoBehaviour
 {
     public void StartLevel()
     {
-        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1f;
+        if (SceneManager.GetActiveScene().buildIndex == 9)
+            Cursor.visible = true;
+        else
+            Cursor.visible = false;
     }
     public void BackToMainMenu()
     {
-        EditorSceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
+        Cursor.visible = true;
     }
 }
 

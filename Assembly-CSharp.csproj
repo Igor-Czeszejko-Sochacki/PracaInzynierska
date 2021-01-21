@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\BomberEnemy.cs" />
     <Compile Include="Assets\Scripts\BossEnemy.cs" />
     <Compile Include="Assets\Scripts\BossFightEnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\BossHealth.cs" />
     <Compile Include="Assets\Scripts\BulletLogic.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />

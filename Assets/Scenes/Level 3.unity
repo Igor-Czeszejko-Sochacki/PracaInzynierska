@@ -23159,7 +23159,7 @@ MonoBehaviour:
   menu: {fileID: 1427545292}
   timeFromAttack: 0
   healthRegeneration: 5
-  initialHealth: 10000
+  initialHealth: 100
   enemiesKilled: 0
   isBossKilled: 0
 --- !u!1 &554018135
@@ -55725,6 +55725,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8753851209272976168, guid: 780810ab295295a4d990fc6a49411fc3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e284490bdf09df5418660a009ef3f45c,
+        type: 3}
     - target: {fileID: 8905937037767706522, guid: 780810ab295295a4d990fc6a49411fc3,
         type: 3}
       propertyPath: m_Color.r
