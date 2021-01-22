@@ -22,7 +22,6 @@ public class PistolHandling : MonoBehaviour
 
     //Gun damage
     public int damage = 80;
-    public float bulletLifeTime = 20f;
 
     //Recoil
     private float recoilX;
@@ -68,6 +67,7 @@ public class PistolHandling : MonoBehaviour
                 rifle.IsSkillRechargeActive = false;
             }
         }
+
         if (shotgun.IsSkillRechargeActive == true)
         {
             shotgun.SkillRechargeTimer += Time.deltaTime;

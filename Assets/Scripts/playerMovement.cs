@@ -17,6 +17,7 @@ public class playerMovement : MonoBehaviour
     public float gravity = -9.81f;
     public float crouchHeight = 0.5f;
     public float jumpRecharge = 0f;
+
     // Update is called once per frame
     void Update()
     {
@@ -28,10 +29,12 @@ public class playerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
+        //Moving
         float xAxis = Input.GetAxis("Horizontal");
         float zAxis = Input.GetAxis("Vertical");
-
         Vector3 move = transform.right * xAxis + transform.forward * zAxis;
+
+        //Changing speed if player is crouching
         if (isCrouching == true)
         {
             speed = 5f;
@@ -40,15 +43,18 @@ public class playerMovement : MonoBehaviour
         else
         controller.Move(move * speed * Time.deltaTime);
 
+        //Falling
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
+        //Jumping
         if (Input.GetButtonDown("Jump") && jumpRecharge <= 0f)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             jumpRecharge = 1f;
         }
 
+        //Crouching
         if (Input.GetKey(KeyCode.LeftControl))
         {
             controller.height = crouchHeight;
@@ -62,6 +68,7 @@ public class playerMovement : MonoBehaviour
             speed = 12f;
         }
 
+        //Sprinting
         if (Input.GetKey(KeyCode.LeftShift) && zAxis == 1 && isCrouching == false && isGrounded == true)
             speed = 20f;
         else

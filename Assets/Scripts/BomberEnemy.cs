@@ -15,14 +15,15 @@ public class BomberEnemy : MonoBehaviour
     //Enemy stats
     public int health = 100;
     public int damage = 50;
-    private bool isDead = false;
     public float sightRange;
     public float attackRange = 3;
-    public bool exploded = false;
+    
 
     //States
     public bool playerIsInRange = false;
     public bool playerInAttackRange = false;
+    public bool exploded = false;
+    private bool isDead = false;
 
     //Pathfinding to random point
     public Vector3 walkPoint;
@@ -118,7 +119,7 @@ public class BomberEnemy : MonoBehaviour
             playerModel.timeFromAttack = 0;
         }
 
-        //Stoping the enemy and rotating in the direction of the player
+        //Stoping the enemy and killing it
         agent.SetDestination(transform.position);
         health = 0;
         if (health <= 0 && isDead == false)

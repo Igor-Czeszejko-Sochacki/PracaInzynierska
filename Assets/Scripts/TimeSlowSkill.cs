@@ -26,7 +26,6 @@ public class TimeSlowSkill : MonoBehaviour
             Time.timeScale = slowDownFactor;
     }
 
-    //
     public void stopSlowMotion()
     {
         if (gameisPaused.isGamePaused == false)

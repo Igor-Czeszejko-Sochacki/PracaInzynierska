@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+        //Displaying health and ammo
         heathText.text = "Health: " + (int)player.Health;
 
         if (currentWeapon.CurrentWeapon == 0)

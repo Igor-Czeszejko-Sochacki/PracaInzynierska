@@ -17,7 +17,7 @@ public class BulletLogic : MonoBehaviour
 
     private float currentBulletLifeTimer;
 
-
+    //When enabling the bullet we set its timer to bulletLifeTime
     void OnEnable()
     {
         currentBulletLifeTimer = bulletLifeTime;
@@ -39,6 +39,7 @@ public class BulletLogic : MonoBehaviour
         }
     }
 
+    //If bullet hits a collider - disable it
     void OnTriggerEnter(Collider characterCollider)
     {
         if (characterCollider.gameObject.layer == objectMask)

@@ -471,7 +471,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2420
+  m_Name: pb_Mesh16784
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5572,6 +5572,7 @@ GameObject:
   - component: {fileID: 210704194}
   - component: {fileID: 210704193}
   - component: {fileID: 210704192}
+  - component: {fileID: 210704197}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -5870,6 +5871,19 @@ Transform:
   m_Father: {fileID: 1214745412}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &210704197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210704191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 20, z: 97.999985}
+  m_Center: {x: 0.49999985, y: 9, z: -48.999992}
 --- !u!1 &214557429
 GameObject:
   m_ObjectHideFlags: 0
@@ -8759,7 +8773,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d2a778896ed82e24cb5ec894c8a29036, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13160,7 +13174,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7ababe78dd1321b458d8da0099518d24, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13268,7 +13282,6 @@ MonoBehaviour:
   menu: {fileID: 1351681567}
   initialPistolAmmunition: 90
   damage: 80
-  bulletLifeTime: 20
 --- !u!1001 &721153242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18080,8 +18093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 1956320816}
-  menu: {fileID: 1351681567}
-  mouseSensitivity: 100
+  mouseSensitivity: 50
 --- !u!1 &974924915
 GameObject:
   m_ObjectHideFlags: 0
@@ -23671,7 +23683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2544
+  m_Name: pb_Mesh15830
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25725,7 +25737,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2350
+  m_Name: pb_Mesh16288
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27229,7 +27241,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -27336,7 +27348,6 @@ MonoBehaviour:
   shotgun: {fileID: 268202692}
   menu: {fileID: 1351681567}
   damage: 20
-  bulletLifeTime: 20
   initialRifleAmmunition: 100
 --- !u!1 &1632086946
 GameObject:
@@ -29498,6 +29509,7 @@ GameObject:
   - component: {fileID: 1669332881}
   - component: {fileID: 1669332880}
   - component: {fileID: 1669332879}
+  - component: {fileID: 1669332884}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -29796,6 +29808,19 @@ Transform:
   m_Father: {fileID: 1214745412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1669332884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669332878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 20, z: 1.0000005}
+  m_Center: {x: 50, y: 9, z: -0.499992}
 --- !u!43 &1677060122
 Mesh:
   m_ObjectHideFlags: 0
@@ -30790,7 +30815,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2532
+  m_Name: pb_Mesh16464
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31312,7 +31337,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2534
+  m_Name: pb_Mesh16654
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37825,8 +37850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba46d14065221941b8ad7499208cd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5067321293338943718, guid: 3b618e307e3d5374c8b402ecbf2f646f, type: 3}
-  gun: {fileID: 1624137039}
   cylinder: {fileID: 2082612004}
   rifleAmmo: {fileID: 1624137043}
   shotgunAmmo: {fileID: 268202692}
@@ -37984,6 +38007,7 @@ GameObject:
   - component: {fileID: 1972193521}
   - component: {fileID: 1972193520}
   - component: {fileID: 1972193519}
+  - component: {fileID: 1972193524}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -38282,6 +38306,19 @@ Transform:
   m_Father: {fileID: 1214745412}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1972193524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972193518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 86, y: 20, z: 1.0000005}
+  m_Center: {x: 47, y: 9, z: -0.49999973}
 --- !u!1 &1978923032
 GameObject:
   m_ObjectHideFlags: 0
@@ -46433,6 +46470,7 @@ GameObject:
   - component: {fileID: 2109513853}
   - component: {fileID: 2109513852}
   - component: {fileID: 2109513851}
+  - component: {fileID: 2109513856}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -46732,6 +46770,19 @@ Transform:
   m_Father: {fileID: 1214745412}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2109513856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109513850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 20, z: 97.999985}
+  m_Center: {x: 0.49999985, y: 9, z: -48.999992}
 --- !u!1 &2117841106
 GameObject:
   m_ObjectHideFlags: 0

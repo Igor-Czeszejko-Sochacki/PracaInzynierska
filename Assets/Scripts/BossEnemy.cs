@@ -12,8 +12,7 @@ public class BossEnemy : MonoBehaviour
 
     //Enemy stats
     public int health = 5000;
-    public int damage = 5;
-    private bool isDead = false;
+    public int damage = 5;  
     public float sightRange = 200;
     public float attackRange = 5;
 
@@ -28,10 +27,10 @@ public class BossEnemy : MonoBehaviour
     Vector3 newVector = new Vector3(0, (1 / 2), 0);
 
     //States
-    public bool atacking = false;
     public bool playerIsInRange = false;
     public bool playerInAttackRange = false;
     public bool attackedMelee = false;
+    private bool isDead = false;
 
 
     void Start()

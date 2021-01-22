@@ -7,6 +7,7 @@ public class EnemySpawn : MonoBehaviour
     private int waveNumber = 0;
     public float timeBetweenWaves = 90;
     public float waveCountdown = 90;
+
     public Transform[] spawnPoints;
     public GameObject enemy;
 
@@ -19,7 +20,10 @@ public class EnemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Counting down the timer to spawn a new wave
         waveCountdown -= Time.deltaTime;
+
+        //If enough time passed - respawn new wave
         if (waveCountdown <= 0 && waveNumber <= 2)
         {
             waveNumber++;
@@ -28,6 +32,7 @@ public class EnemySpawn : MonoBehaviour
         }   
     }
 
+    //Spawning enemies in their spawn points
     public void SpawnEnemies()
     {
         foreach (Transform point in spawnPoints)

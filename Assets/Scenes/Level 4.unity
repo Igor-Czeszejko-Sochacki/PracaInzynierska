@@ -1751,7 +1751,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1858,7 +1858,6 @@ MonoBehaviour:
   shotgun: {fileID: 508616375}
   menu: {fileID: 873622420}
   damage: 20
-  bulletLifeTime: 20
   initialRifleAmmunition: 100
 --- !u!1001 &119703898
 PrefabInstance:
@@ -6315,7 +6314,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d2a778896ed82e24cb5ec894c8a29036, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8502,8 +8501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba46d14065221941b8ad7499208cd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5067321293338943718, guid: 3b618e307e3d5374c8b402ecbf2f646f, type: 3}
-  gun: {fileID: 118098069}
   cylinder: {fileID: 980915698}
   rifleAmmo: {fileID: 118098071}
   shotgunAmmo: {fileID: 508616375}
@@ -12391,7 +12388,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7ababe78dd1321b458d8da0099518d24, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12499,7 +12496,6 @@ MonoBehaviour:
   menu: {fileID: 873622420}
   initialPistolAmmunition: 90
   damage: 80
-  bulletLifeTime: 20
 --- !u!1 &987702083
 GameObject:
   m_ObjectHideFlags: 0
@@ -17219,8 +17215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 682061233}
-  menu: {fileID: 0}
-  mouseSensitivity: 100
+  mouseSensitivity: 50
 --- !u!81 &1440498981
 AudioListener:
   m_ObjectHideFlags: 0

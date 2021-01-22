@@ -18,6 +18,7 @@ public class BossHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            healthShowcase.fillAmount = boss.health / bossMaxHealth;
+        //Updating healthShowcase bar when boss takes damage
+        healthShowcase.fillAmount = boss.health / bossMaxHealth;
     }
 }

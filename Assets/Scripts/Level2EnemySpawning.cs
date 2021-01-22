@@ -12,12 +12,13 @@ public class Level2EnemySpawning : MonoBehaviour
     public GameObject secondEnemies;
     public GameObject thirdEnemies;
     public GameObject forthEnemies;
-    public MenuController menu;
     public Player player;
 
     // Update is called once per frame
     void Update()
     {
+
+        //Checking how many enemies were killed and spawning next wave if enough died
         if (player.enemiesKilled == 13)
         {
             firstWall.SetActive(false);
@@ -32,11 +33,6 @@ public class Level2EnemySpawning : MonoBehaviour
         {
             thirdWall.SetActive(false);
             forthEnemies.SetActive(true);
-        }
-        //else if (player.enemiesKilled == 64)
-        //{
-        //    menu.VictoryScreen();
-        //}
-            
+        }    
     }
 }

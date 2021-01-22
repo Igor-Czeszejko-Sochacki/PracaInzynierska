@@ -5,8 +5,7 @@ using UnityEngine;
 public class MouseMovement : MonoBehaviour
 {
     public Transform playerBody;
-    public MenuController menu;
-    public float mouseSensitivity = 200f;
+    public float mouseSensitivity = 50f;
     float xRotation = 0f;
 
     //Recoil

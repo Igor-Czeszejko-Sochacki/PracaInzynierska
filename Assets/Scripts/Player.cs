@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    public GameObject bullet;
-    public GameObject gun;
-    public GameObject cylinder;  
+    public GameObject cylinder;
     public RifleHandling rifleAmmo;
     public ShotgunHandling shotgunAmmo;
     public PistolHandling pistolAmmo;
@@ -44,6 +41,8 @@ public class Player : MonoBehaviour
         {
             health += healthRegeneration * Time.deltaTime;
         }
+
+        //Dying
         if (health < 1)
         {
             Die();

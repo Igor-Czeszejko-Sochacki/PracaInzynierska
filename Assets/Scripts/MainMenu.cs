@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
     
+    //Loading all the levels
     public void Level1()
     {
         SceneManager.LoadScene(2);

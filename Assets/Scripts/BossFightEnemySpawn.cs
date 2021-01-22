@@ -23,14 +23,19 @@ public class BossFightEnemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Substracting wave timer
         waveCountdown -= Time.deltaTime;
+
+        //Checking if wave timer = 0 and if the boss is dead
         if (waveCountdown <= 0 && isBossDead == false)
         {
+            //Reseting wave timer and spawning enemies
             waveCountdown = timeBetweenWaves;
             SpawnEnemies();
         }
     }
 
+    //Spawning enemies in their spawn points
     public void SpawnEnemies()
     {
         foreach (Transform point in shootingEnemyPoints)
